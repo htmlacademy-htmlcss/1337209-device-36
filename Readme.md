@@ -1,7 +1,6 @@
 # Личный проект «Девайс»
 
 * Студент: [Марат Меремкулов](https://up.htmlacademy.ru/htmlcss/36/user/1337209).
-<<<<<<< HEAD
 * Наставник: [Дмитрий Виноградов](https://htmlacademy.ru/profile/id839417).
 
 
