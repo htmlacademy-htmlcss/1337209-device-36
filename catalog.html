@@ -70,6 +70,118 @@
                     </ul>
                 </div>
             </div>
+            <section class="catalog">
+                <h2 class="visually-hidden">Каталог</h2>
+                <div class="catalog-wrapper container-grid">
+                    <div class="catalog-function">
+                        <ul class="catalog-function-list row-flex">
+                            <li class="catalog-function-item"><span class="">Фильтр:</span></li>
+                            <li class="catalog-function-item"><span class="">Сортировка:</span></li>
+                            <li class="catalog-function-item"><span class="catalog-function-dropdown">Популярные</span></li>
+                            <li class="catalog-function-item">
+                                <div class="arrow">
+                                    <span class="arrow-up"></span>
+                                    <span class="arrow-down"></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="catalog-filter">
+                        <form id="idform" class='product-filter' action="https://echo.htmlacademy.ru/" method="get">
+                            <div class="product-filter-price filter-block">
+                                <span class="product-filter-title"><b>Стоимость</b></span>
+                                <label class="product-filter-price filter-label">
+                                    <input class="catalog-input-range" type="range" name="range">
+                                </label>
+                            </div>
+                            <div class="product-filter-checkbox filter-block">
+                                <span class="product-filter-title "><b>Цвет</b></span>
+                                <label class="product-filter-price filter-label">
+                                    <input class="catalog-input-checkbox" type="checkbox" name="color" value="black"> чёрный
+                                </label>
+                                <label class="product-filter-price filter-label">
+                                    <input class="catalog-input-checkbox" type="checkbox" name="color" value="white"> белый
+                                </label>
+                                <label class="product-filter-price filter-label">
+                                    <input class="catalog-input-checkbox" type="checkbox" name="color" value="blue"> синий
+                                </label>
+                                <label class="product-filter-price filter-label">
+                                    <input class="catalog-input-checkbox" type="checkbox" name="color" value="red"> красный
+                                </label>
+                                <label class="product-filter-price filter-label">
+                                    <input class="catalog-input-checkbox" type="checkbox" name="color" value="pink"> розовый
+                                </label>
+                            </div>
+                            <div class="product-filter-bluetooth filter-block">
+                                <span class="product-filter-title"><b>Bluetooth</b></span>
+                                <label class="filter-label">
+                                    <input class="catalog-input-radio" type="radio" name="bluetooth" value="yes">
+                                    Есть
+                                </label>
+                                <label class="filter-label">
+                                    <input type="radio" name="bluetooth" value="no">
+                                    Нет
+                                </label>
+                            </div>
+                        </form>
+                        <div class="main-button">
+                            <button class="button-filter button" type="submit" form="idform">показать</button>
+                        </div>
+                    </div>
+                    <div class="catalog-product row-flex">
+                      <div class="catalog-product-card">
+                          <img class="catalog-product-image" src="#" alt="Любительская селфи палка">
+                          <div class="catalog-product-description">
+                              <div class="catalog-product-name"><b>Любительская селфи палка</b></div>
+                              <div class="catalog-product-price">500 р</div>
+                          </div>
+                      </div>
+                      <div class="catalog-product-card">
+                          <img class="catalog-product-image" src="#" alt="Профессиональная селфи-палка">
+                          <div class="catalog-product-description">
+                              <div class="catalog-product-name"><b>Профессиональная селфи-палка</b></div>
+                              <div class="catalog-product-price">1500 р</div>
+                          </div>
+                      </div>
+                      <div class="catalog-product-card">
+                          <img class="catalog-product-image" src="#" alt="Непотопляемая
+                          селфи-палка">
+                          <div class="catalog-product-description">
+                              <div class="catalog-product-name"><b>Непотопляемая селфи-палка</b></div>
+                              <div class="catalog-product-price">2500 р</div>
+                          </div>
+                      </div>
+                      <div class="catalog-product-card">
+                          <img class="catalog-product-image" src="#" alt="Селфи-палка «Следуй за мной»">
+                          <div class="catalog-product-description">
+                              <div class="catalog-product-name"><b>Селфи-палка «Следуй за мной»</b></div>
+                              <div class="catalog-product-price">1500 р</div>
+                          </div>
+                      </div>
+                      <div class="pagination-container">
+                          <div class="pagination-widget">
+                              <button class="pagination-widget-btn" type="button"><span class="button-label">загрузить ещё</span></button>
+                          </div>
+                          <div class="pagination-controls row-flex">
+                              <ul class="pagination-controls-list row-flex">
+                                  <li class="pagination-controls-item">
+                                      <a class="pagination-controls-back" href="#">назад</a>
+                                  </li>
+                                  <li class="pagination-controls-item"><a class="pagination-controls-link" href="#">1</a></li>
+                                  <li class="pagination-controls-item"><a class="pagination-controls-link" href="#">2</a></li>
+                                  <li class="pagination-controls-item"><a class="pagination-controls-link" href="#">3</a></li>
+                                  <li class="pagination-controls-item"><a class="pagination-controls-link" href="#">4</a></li>
+                                  <li class="pagination-controls-item"><a class="pagination-controls-link" href="#">...</a></li>
+                                  <li class="pagination-controls-item"><a class="pagination-controls-link" href="#">15</a></li>
+                                  <li class="pagination-controls-item">
+                                      <a class="pagination-controls-next" href="#">вперёд</a>
+                                  </li>
+                              </ul> 
+                          </div>
+                      </div>
+                    </div>
+                </div>
+              </section>
         </div>
     </main>
     <!-- /main -->
