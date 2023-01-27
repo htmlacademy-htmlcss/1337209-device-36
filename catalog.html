@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Каталог</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- header -->
     <header class="header">
         <div class="header-wrapper">
@@ -17,7 +19,8 @@
                                 <div class="header-form-wrapper">
                                     <div class="header-search">
                                         <label for="header-search"></label>
-                                        <input id="header-search" type="search" name="search" placeholder="Поиск по сайту">
+                                        <input id="header-search" type="search" name="search"
+                                            placeholder="Поиск по сайту">
                                     </div>
                                     <div class="header-btn">
                                         <label for="header-submit"></label>
@@ -27,16 +30,20 @@
                             </form>
                         </div>
                     </div>
-                    <div class="header-user-menu"><a class="header-control-link" href="#"><img src="#" alt="Вход в личный кабинет.">Войти</a></div>
-                    <div class="header-compare"><a class="header-control-link" href="#"><img src="#" alt="Сравнение товаров.">Сравнение</a></div>
-                    <div class="header-basket"><a class="header-control-link" href="#"><img src="#" alt="Корзина.">Корзина</a></div>
+                    <div class="header-user-menu"><a class="header-control-link" href="#"><img src="#"
+                                alt="Вход в личный кабинет.">Войти</a></div>
+                    <div class="header-compare"><a class="header-control-link" href="#"><img src="#"
+                                alt="Сравнение товаров.">Сравнение</a></div>
+                    <div class="header-basket"><a class="header-control-link" href="#"><img src="#"
+                                alt="Корзина.">Корзина</a></div>
                 </div>
             </div>
             <div class="header-bottom">
                 <div class="header-bottom-wrapper">
                     <nav class="header-navigation">
                         <ul class="navigation-list">
-                            <li class="navigation-item"><a class="navigation-link" href="catalog.html">каталог товаров</a></li>
+                            <li class="navigation-item"><a class="navigation-link" href="catalog.html">каталог
+                                    товаров</a></li>
                             <li class="navigation-item"><a class="navigation-link" href="#">доставка</a></li>
                             <li class="navigation-item"><a class="navigation-link" href="#">гарантия</a></li>
                             <li class="navigation-item"><a class="navigation-link" href="#">контакты</a></li>
@@ -74,22 +81,10 @@
             </div>
             <section class="catalog">
                 <h2 class="visually-hidden">Каталог</h2>
-                <div class="catalog-wrapper container-grid">
-                    <div class="catalog-function">
-                        <ul class="catalog-function-list row-flex">
-                            <li class="catalog-function-item"><span class="catalog-function-item-text">Фильтр:</span></li>
-                            <li class="catalog-function-item"><span class="catalog-function-item-text">Сортировка:</span></li>
-                            <li class="catalog-function-item"><span class="catalog-function-dropdown">Популярные</span></li>
-                            <li class="catalog-function-item">
-                                <div class="arrow">
-                                    <span class="arrow-up"></span>
-                                    <span class="arrow-down"></span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="catalog-wrapper">
                     <div class="catalog-filter">
-                        <form id="idform" class='product-filter' action="https://echo.htmlacademy.ru/" method="get">
+                        <form class='product-filter' action="https://echo.htmlacademy.ru/" method="get">
+                            <h2 class="catalog-filter-heading">Фильтр:</h2>
                             <fieldset class="product-filter-price filter-block">
                                 <legend class="product-filter-title"><b>Стоимость</b></legend>
                                 <label class="product-filter-price filter-label">
@@ -117,7 +112,8 @@
                             <fieldset class="product-filter-bluetooth filter-block">
                                 <legend class="product-filter-title"><b>Bluetooth</b></legend>
                                 <label class="filter-label">
-                                    <input class="catalog-input-radio" type="radio" name="bluetooth" value="yes" checked>
+                                    <input class="catalog-input-radio" type="radio" name="bluetooth" value="yes"
+                                        checked>
                                     Есть
                                 </label>
                                 <label class="filter-label">
@@ -125,65 +121,85 @@
                                     Нет
                                 </label>
                             </fieldset>
+                            <button class="button-filter button" type="submit">показать</button>
                         </form>
-                        <div class="main-form-button">
-                            <button class="button-filter button" type="submit" form="idform">показать</button>
+                    </div>
+                    <div class="catalog-product col-flex">
+                        <div class="catalog-product-top">
+                            <label for="sorting">Сортировка:</label>
+                            <select class="catalog-product-sorting" id="sorting">
+                                <option value="popular" selected>Популярные</option>
+                                <option value="inexpensive">Недорогие</option>
+                                <option value="discussed">Обсуждаемые</option>
+                            </select>
+                            <div class="arrow">
+                                <button type="button"><span class="arrow-up visually-hidden">вверх</span></button>
+                                <button type="button"><span class="arrow-down visually-hidden">вниз</span></button>
+                            </div>
+                        </div>
+                        <div class="catalog-product-cards">
+                            <div class="catalog-product-card">
+                                <img class="catalog-product-image" src="#" alt="Любительская селфи палка.">
+                                <div class="catalog-product-description">
+                                    <b class="catalog-product-name">Любительская селфи палка</b>
+                                    <span class="catalog-product-price">500 р</span>
+                                </div>
+                            </div>
+                            <div class="catalog-product-card">
+                                <img class="catalog-product-image" src="#" alt="Профессиональная селфи-палка.">
+                                <div class="catalog-product-description">
+                                    <b class="catalog-product-name">Профессиональная селфи-палка</b>
+                                    <span class="catalog-product-price">1500 р</span>
+                                </div>
+                            </div>
+                            <div class="catalog-product-card">
+                                <img class="catalog-product-image" src="#" alt="Непотопляемая
+                                    селфи-палка.">
+                                <div class="catalog-product-description">
+                                    <b class="catalog-product-name">Непотопляемая селфи-палка</b>
+                                    <span class="catalog-product-price">2500 р</span>
+                                </div>
+                            </div>
+                            <div class="catalog-product-card">
+                                <img class="catalog-product-image" src="#" alt="Селфи-палка «Следуй за мной».">
+                                <div class="catalog-product-description">
+                                    <b class="catalog-product-name">Селфи-палка «Следуй за мной»</b>
+                                    <span class="catalog-product-price">1500 р</span>
+                                </div>
+                            </div>
+                        
+                            <div class="pagination-container">
+                                <div class="pagination-widget">
+                                    <button class="pagination-widget-btn" type="button"><span class="button-label">загрузить
+                                            ещё</span></button>
+                                </div>
+                                <div class="pagination-controls row-flex">
+                                    <ul class="pagination-controls-list row-flex">
+                                        <li class="pagination-controls-item">
+                                            <a class="pagination-controls-back" href="#">назад</a>
+                                        </li>
+                                        <li class="pagination-controls-item"><a class="pagination-controls-link"
+                                                href="#">1</a></li>
+                                        <li class="pagination-controls-item"><a class="pagination-controls-link"
+                                                href="#">2</a></li>
+                                        <li class="pagination-controls-item"><a class="pagination-controls-link"
+                                                href="#">3</a></li>
+                                        <li class="pagination-controls-item"><a class="pagination-controls-link"
+                                                href="#">4</a></li>
+                                        <li class="pagination-controls-item"><a class="pagination-controls-link"
+                                                href="#">...</a></li>
+                                        <li class="pagination-controls-item"><a class="pagination-controls-link"
+                                                href="#">15</a></li>
+                                        <li class="pagination-controls-item">
+                                            <a class="pagination-controls-next" href="#">вперёд</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="catalog-product row-flex">
-                      <div class="catalog-product-card">
-                          <img class="catalog-product-image" src="#" alt="Любительская селфи палка.">
-                          <div class="catalog-product-description">
-                              <b class="catalog-product-name">Любительская селфи палка</b>
-                              <span class="catalog-product-price">500 р</span>
-                          </div>
-                      </div>
-                      <div class="catalog-product-card">
-                          <img class="catalog-product-image" src="#" alt="Профессиональная селфи-палка.">
-                          <div class="catalog-product-description">
-                              <b class="catalog-product-name">Профессиональная селфи-палка</b>
-                              <span class="catalog-product-price">1500 р</span>
-                          </div>
-                      </div>
-                      <div class="catalog-product-card">
-                          <img class="catalog-product-image" src="#" alt="Непотопляемая
-                          селфи-палка.">
-                          <div class="catalog-product-description">
-                              <b class="catalog-product-name">Непотопляемая селфи-палка</b>
-                              <span class="catalog-product-price">2500 р</span>
-                          </div>
-                      </div>
-                      <div class="catalog-product-card">
-                          <img class="catalog-product-image" src="#" alt="Селфи-палка «Следуй за мной».">
-                          <div class="catalog-product-description">
-                              <b class="catalog-product-name">Селфи-палка «Следуй за мной»</b>
-                              <span class="catalog-product-price">1500 р</span>
-                          </div>
-                      </div>
-                      <div class="pagination-container">
-                          <div class="pagination-widget">
-                              <button class="pagination-widget-btn" type="button"><span class="button-label">загрузить ещё</span></button>
-                          </div>
-                          <div class="pagination-controls row-flex">
-                              <ul class="pagination-controls-list row-flex">
-                                  <li class="pagination-controls-item">
-                                      <a class="pagination-controls-back" href="#">назад</a>
-                                  </li>
-                                  <li class="pagination-controls-item"><a class="pagination-controls-link" href="#">1</a></li>
-                                  <li class="pagination-controls-item"><a class="pagination-controls-link" href="#">2</a></li>
-                                  <li class="pagination-controls-item"><a class="pagination-controls-link" href="#">3</a></li>
-                                  <li class="pagination-controls-item"><a class="pagination-controls-link" href="#">4</a></li>
-                                  <li class="pagination-controls-item"><a class="pagination-controls-link" href="#">...</a></li>
-                                  <li class="pagination-controls-item"><a class="pagination-controls-link" href="#">15</a></li>
-                                  <li class="pagination-controls-item">
-                                      <a class="pagination-controls-next" href="#">вперёд</a>
-                                  </li>
-                              </ul> 
-                          </div>
-                      </div>
-                    </div>
                 </div>
-              </section>
+            </section>
         </div>
     </main>
     <!-- /main -->
@@ -200,11 +216,11 @@
             <div class="footer-middle">
                 <div class="footer-middle-container row-flex">
                     <p class="footer-adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-                        <ul class="footer-info-list row-flex">
-                            <li class="footer-info-item"><a href="#" class="footer-info-link">доставка</a></li>
-                            <li class="footer-info-item"><a href="#" class="footer-info-link">гарантия</a></li>
-                            <li class="footer-info-item"><a href="#" class="footer-info-link">кредит</a></li>
-                        </ul>
+                    <ul class="footer-info-list row-flex">
+                        <li class="footer-info-item"><a href="#" class="footer-info-link">доставка</a></li>
+                        <li class="footer-info-item"><a href="#" class="footer-info-link">гарантия</a></li>
+                        <li class="footer-info-item"><a href="#" class="footer-info-link">кредит</a></li>
+                    </ul>
                     <a class="footer-phone" href="tel:+7(812)812-12-12">
                         <span class="phone">Тел.: +7 (812) 812-12-12</span>
                     </a>
@@ -222,7 +238,8 @@
                 </div>
             </div>
         </div>
-    </footer> 
+    </footer>
     <!-- /footer -->
-  </body>
+</body>
+
 </html>
