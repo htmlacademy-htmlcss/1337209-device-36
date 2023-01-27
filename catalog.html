@@ -90,14 +90,14 @@
                     </div>
                     <div class="catalog-filter">
                         <form id="idform" class='product-filter' action="https://echo.htmlacademy.ru/" method="get">
-                            <div class="product-filter-price filter-block">
-                                <span class="product-filter-title"><b>Стоимость</b></span>
+                            <fieldset class="product-filter-price filter-block">
+                                <legend class="product-filter-title"><b>Стоимость</b></legend>
                                 <label class="product-filter-price filter-label">
                                     <input class="catalog-input-range" type="range" name="range" min="0" max="8000">
                                 </label>
-                            </div>
-                            <div class="product-filter-checkbox filter-block">
-                                <span class="product-filter-title "><b>Цвет</b></span>
+                            </fieldset>
+                            <fieldset class="product-filter-checkbox filter-block">
+                                <legend class="product-filter-title "><b>Цвет</b></legend>
                                 <label class="product-filter-price filter-label">
                                     <input class="catalog-input-checkbox" type="checkbox" name="black" checked> чёрный
                                 </label>
@@ -113,9 +113,9 @@
                                 <label class="product-filter-price filter-label">
                                     <input class="catalog-input-checkbox" type="checkbox" name="pink"> розовый
                                 </label>
-                            </div>
-                            <div class="product-filter-bluetooth filter-block">
-                                <span class="product-filter-title"><b>Bluetooth</b></span>
+                            </fieldset>
+                            <fieldset class="product-filter-bluetooth filter-block">
+                                <legend class="product-filter-title"><b>Bluetooth</b></legend>
                                 <label class="filter-label">
                                     <input class="catalog-input-radio" type="radio" name="bluetooth" value="yes" checked>
                                     Есть
@@ -124,7 +124,7 @@
                                     <input type="radio" name="bluetooth" value="no">
                                     Нет
                                 </label>
-                            </div>
+                            </fieldset>
                         </form>
                         <div class="main-form-button">
                             <button class="button-filter button" type="submit" form="idform">показать</button>
