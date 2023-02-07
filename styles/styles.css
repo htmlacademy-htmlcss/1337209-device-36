@@ -11,16 +11,6 @@
 @font-face {
   font-family: "Rubik";
   font-size: 18px;
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-
-  src: url(../fonts/rubik/rubik-400.woff2);
-}
-
-@font-face {
-  font-family: "Rubik";
-  font-size: 18px;
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -30,30 +20,10 @@
 }
 
 @font-face {
-  font-family: "Rubik";
-  font-size: 18px;
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-
-  src: url(../fonts/rubik/rubik-700.woff2);
-}
-
-@font-face {
   font-family: "Raleway";
   font-size: 18px;
   font-weight: 800;
   font-style: normal;
-  font-display: swap;
-
-  src: url(../fonts/raleway/raleway-800.woff2);
-}
-
-@font-face {
-  font-family: "Raleway";
-  font-size: 18px;
-  font-weight: 800;
-  font-style: italic;
   font-display: swap;
 
   src: url(../fonts/raleway/raleway-800.woff2);
@@ -76,14 +46,14 @@ body {
 h2.heading {
   font-family: "Raleway";
   font-size: 50px;
+  font-weight: 800;
   line-height: 50px;
 }
-
 
 .link-button {
   font-family: "Raleway";
   font-weight: 800;
-  line-height: 21.13px;
+  line-height: 21px;
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
@@ -96,13 +66,13 @@ h2.heading {
 }
 
 .link-button-active:hover {
-  color: #FFE17F;
+  color: #ffe17f;
 }
 
 /* header */
 
 .header {
-  background-color: #FFE17F;
+  background-color: #ffe17f;
 }
 
 /* header-search */
@@ -125,10 +95,12 @@ h2.heading {
 /* header-navigation */
 
 .navigation-list {
+  margin: 0;
+
   font-family: "Raleway";
   font-weight: 700;
   font-size: 18px;
-  letter-spacing: 2px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 
   list-style: none;
@@ -142,9 +114,17 @@ h2.heading {
 
 /* main-slider */
 
+.main-slider {
+  background: linear-gradient(#ffe17f 148px, #ffffff 148px)
+}
+
 .product-characteristic b {
   font-size: 36px;
   font-weight: 400;
+}
+
+.product-specification {
+  font-size: 16px;
 }
 
 /* main */
@@ -180,7 +160,7 @@ h2.heading {
   font-size: 16px;
   font-weight: 800;
   line-height: 19px;
-  letter-spacing: 2px;
+  letter-spacing: 0.2em;
 
   text-transform: uppercase;
 }
@@ -189,8 +169,8 @@ h2.heading {
   font-family: "Raleway";
   font-size: 18px;
   font-weight: 800;
-  line-height: 21.13px;
-  letter-spacing: 2px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
   text-decoration: none;
   text-transform: uppercase;
 
@@ -203,6 +183,8 @@ h2.heading {
 
 .product-filter-title {
   line-height: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 .sorting-heading {
@@ -210,7 +192,7 @@ h2.heading {
   font-size: 16px;
   font-weight: 800;
   line-height: 19px;
-  letter-spacing: 2px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
@@ -229,8 +211,6 @@ h2.heading {
   list-style: none;
 }
 
-
-
 .catalog-category-link {
   width: 160px;
   height: 160px;
@@ -238,7 +218,7 @@ h2.heading {
   font-family: "Raleway";
   font-weight: 800;
   line-height: 24px;
-  letter-spacing: -0.36px;
+  letter-spacing: -0.02em;
   text-decoration: none;
 
   color: #000000;
@@ -258,21 +238,28 @@ h2.heading {
   line-height: 21px;
 }
 
+.catalog-product-name {
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+
 /* pagination */
 
 .pagination-widget-button {
   box-sizing: border-box;
-  padding: 18px 294.5px;
+  padding: 18px 295px;
 
   font-family: "Raleway";
   font-size: 16px;
   font-weight: 800;
   line-height: 19px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 
   background-color: transparent;
 
-  outline: 3px solid #E5E5E5;
+  outline: 3px solid #e5e5e5;
   border: none;
   cursor: pointer;
 }
@@ -292,6 +279,8 @@ h2.heading {
   font-family: "Raleway";
   font-size: 18px;
   font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
 
@@ -308,14 +297,22 @@ h2.heading {
   list-style: none;
 }
 
+.service-button {
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+}
+
 /* express-delivery */
 
 .express-delivery-link {
   font-family: "Raleway";
   font-weight: 800;
   font-size: 20px;
-  letter-spacing: 2px;
-  line-height: 23.48px;
+  letter-spacing: 0.2em;
+  line-height: 24px;
   text-transform: uppercase;
   text-decoration: none;
 
@@ -327,7 +324,7 @@ h2.heading {
   width: 125px;
   height: 100px;
 
-  background-color: #FFE17F;
+  background-color: #ffe17f;
   background-repeat: no-repeat;
   background-image: url("../images/express-delivery-icon.svg");
 }
@@ -335,7 +332,7 @@ h2.heading {
 .express-delivery-text {
   text-align: center;
 
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
 .express-delivery-i {
@@ -353,11 +350,11 @@ h2.heading {
 .company-list {
   font-weight: 700;
   line-height: 20px;
-  letter-spacing: -0.36px;
+  letter-spacing: -0.02em;
 }
 
 .company-item::marker {
-  color: #FFC700;
+  color: #ffc700;
 }
 
 .company-contact-subheading {
@@ -370,20 +367,20 @@ h2.heading {
 /* subscription */
 
 .subscription {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
 .subscription-email-field {
   font-size: 18px;
-  line-height: 21.13px;
+  line-height: 21px;
 }
 
 .subscription-button {
   font-family: "Raleway";
   font-size: 18px;
   font-weight: 800;
-  line-height: 21.13px;
-  letter-spacing: 2px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
@@ -412,7 +409,7 @@ h2.heading {
 .footer-info-list {
   font-family: "Raleway";
   font-weight: 800;
-  line-height: 21.13px;
-  letter-spacing: 2px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
