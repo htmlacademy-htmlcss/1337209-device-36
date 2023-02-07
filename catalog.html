@@ -9,7 +9,7 @@
   <body>
     <!-- header -->
     <header class="header">
-      <div class="header-wrapper">
+      <div class="header-container container">
         <div class="header-logo">
           <a class="header-logo-link" href="index.html">
             <img src="images/logo.svg" width="145" height="36" alt="Логотип Device.">
@@ -43,7 +43,9 @@
           <nav class="header-navigation">
             <ul class="navigation-list">
               <li class="navigation-item">
-                <a class="navigation-link" href="catalog.html">каталог товаров</a>
+                <a class="navigation-link" href="catalog.html">каталог товаров
+                  <span class="navigation-link-icon"></span>
+                </a>
               </li>
               <li class="navigation-item">
                 <a class="navigation-link" href="#">доставка</a>
@@ -62,9 +64,9 @@
     <!-- /header -->
     <!-- main -->
     <main class="main">
-      <div class="main-wrapper">
-        <h1 class="main-title">Моноподы для селфи</h1>
-        <div class="breadcrumbs">
+      <div class="main-container">
+        <div class="breadcrumbs container">
+          <h1 class="main-title">Моноподы для селфи</h1>
           <ul class="breadcrumbs-list row-flex">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html"> Главная </a>
@@ -79,7 +81,7 @@
         </div>
         <section class="catalog">
           <h2 class="visually-hidden">Каталог</h2>
-          <div class="catalog-wrapper">
+          <div class="catalog-container container">
             <div class="catalog-filter">
               <form class="product-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <h2 class="catalog-filter-heading">Фильтр:</h2>
@@ -114,7 +116,7 @@
                     Есть
                   </label>
                   <label class="filter-label">
-                    <input type="radio" name="bluetooth" value="no" />
+                    <input type="radio" name="bluetooth" value="no">
                     Нет
                   </label>
                 </fieldset>
@@ -134,7 +136,7 @@
                 </select>
                 <div class="arrow">
                   <button type="button">
-                    <img src="images/arrow/arrow-up.svg" alt="" />
+                    <img src="images/arrow/arrow-up.svg" alt="">
                     <span class="arrow-up visually-hidden">вверх</span>
                   </button>
                   <button type="button">
@@ -214,7 +216,7 @@
     <!-- /main -->
     <!-- footer -->
     <footer class="footer">
-      <div class="footer-container col-flex">
+      <div class="footer-container container col-flex">
         <div class="footer-top">
           <div class="footer-logo">
             <a class="footer-logo-link" href="index.html">
