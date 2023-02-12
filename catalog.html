@@ -9,62 +9,65 @@
   <body>
     <!-- header -->
     <header class="header">
-      <div class="header-wrapper">
+      <div class="header-container header-main container">
         <div class="header-logo">
           <a class="header-logo-link" href="index.html">
             <img src="images/logo.svg" width="145" height="36" alt="Логотип Device.">
           </a>
         </div>
-        <div class="header-top">
-          <div class="header-control-user">
+        <div class="header-body">
+          <div class="header-left">
             <div class="header-search">
               <form class="header-form" action="https://echo.htmlacademy.ru/" method="get">
                 <label class="search-field">
                   <input type="search" name="search" placeholder="Поиск по сайту">
                 </label>
-                <label class="search-button">
-                  <input class="header-search-button button" type="submit" value="Найти">
+                <label class="header-search-button">
+                  <input type="submit" value="Найти">
                 </label>
               </form>
             </div>
-            <div class="header-user-menu">
-              <a class="header-control-link" href="#">Войти</a>
+            <a class="navigation-link" href="catalog.html">каталог товаров
+              <span class="navigation-link-icon"></span>
+            </a>
+          </div>
+          <div class="header-right">
+            <div class="header-top">
+              <div class="header-user-menu">
+                <a class="header-control-link" href="#">Войти</a>
+              </div>
+              <div class="header-compare">
+                <a class="header-control-link" href="#">Сравнить</a>
+              </div>
+              <div class="header-basket">
+                <a class="header-control-link" href="#"><span class="basket-number-product">2</span>Корзина</a>
+              </div>
             </div>
-            <div class="header-compare">
-              <a class="header-control-link" href="#">Сравнить</a>
-            </div>
-            <div class="header-basket">
-              <span class="basket-number-product">2</span>
-              <a class="header-control-link" href="#">Корзина</a>
+            <div class="header-bottom">
+              <nav class="header-navigation">
+                <ul class="navigation-list">
+                  <li class="navigation-item">
+                    <a class="navigation-link" href="#">доставка</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="navigation-link" href="#">гарантия</a>
+                  </li>
+                  <li class="navigation-item">
+                    <a class="navigation-link" href="#">контакты</a>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
-        </div>
-        <div class="header-bottom">
-          <nav class="header-navigation">
-            <ul class="navigation-list">
-              <li class="navigation-item">
-                <a class="navigation-link" href="catalog.html">каталог товаров</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">доставка</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">гарантия</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">контакты</a>
-              </li>
-            </ul>
-          </nav>
         </div>
       </div>
     </header>
     <!-- /header -->
     <!-- main -->
-    <main class="main">
-      <div class="main-wrapper">
-        <h1 class="main-title">Моноподы для селфи</h1>
-        <div class="breadcrumbs">
+    <main class="main main-container">
+      <div class="main-container">
+        <div class="breadcrumbs container">
+          <h1 class="main-title">Моноподы для селфи</h1>
           <ul class="breadcrumbs-list row-flex">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html"> Главная </a>
@@ -79,31 +82,31 @@
         </div>
         <section class="catalog">
           <h2 class="visually-hidden">Каталог</h2>
-          <div class="catalog-wrapper">
+          <div class="catalog-container container">
             <div class="catalog-filter">
               <form class="product-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <h2 class="catalog-filter-heading">Фильтр:</h2>
                 <fieldset class="product-filter-price filter-block">
                   <legend class="product-filter-title">Стоимость</legend>
-                  <label class="product-filter-price filter-label">
+                  <label class="filter-label">
                     <input class="catalog-input-range" type="range" name="range" min="0" max="8000">
                   </label>
                 </fieldset>
                 <fieldset class="product-filter-checkbox filter-block">
                   <legend class="product-filter-title">Цвет</legend>
-                  <label class="product-filter-price filter-label">
+                  <label class="filter-label">
                     <input class="catalog-input-checkbox" type="checkbox" name="black" checked>чёрный
                   </label>
-                  <label class="product-filter-price filter-label">
+                  <label class="filter-label">
                     <input class="catalog-input-checkbox" type="checkbox" name="white" checked>белый
                   </label>
-                  <label class="product-filter-price filter-label">
+                  <label class="filter-label">
                     <input class="catalog-input-checkbox" type="checkbox" name="blue">синий
                   </label>
-                  <label class="product-filter-price filter-label">
+                  <label class="filter-label">
                     <input class="catalog-input-checkbox" type="checkbox" name="red">красный
                   </label>
-                  <label class="product-filter-price filter-label">
+                  <label class="filter-label">
                     <input class="catalog-input-checkbox" type="checkbox" name="pink">розовый
                   </label>
                 </fieldset>
@@ -114,27 +117,28 @@
                     Есть
                   </label>
                   <label class="filter-label">
-                    <input type="radio" name="bluetooth" value="no" />
+                    <input type="radio" name="bluetooth" value="no">
                     Нет
                   </label>
                 </fieldset>
-                <button class="filter-button" type="submit">
+                <button class="filter-submit-button" type="submit">
                   показать
                 </button>
               </form>
             </div>
-            <div class="catalog-product col-flex">
+            <div class="catalog-product">
               <div class="catalog-product-top">
                 <h2 class="sorting-heading">Сортировка:</h2>
-                <label for="sorting"></label>
-                <select class="catalog-product-sorting" id="sorting">
-                  <option class="catatlog-product-classification" value="popular" selected>Популярные</option>
-                  <option class="catatlog-product-classification" value="inexpensive">Недорогие</option>
-                  <option class="catatlog-product-classification" value="discussed">Обсуждаемые</option>
-                </select>
+                <label>
+                  <select class="catalog-product-sorting" id="sorting">
+                    <option class="catatlog-product-classification" value="popular" selected>Популярные</option>
+                    <option class="catatlog-product-classification" value="inexpensive">Недорогие</option>
+                    <option class="catatlog-product-classification" value="discussed">Обсуждаемые</option>
+                  </select>
+                </label>
                 <div class="arrow">
                   <button type="button">
-                    <img src="images/arrow/arrow-up.svg" alt="" />
+                    <img src="images/arrow/arrow-up.svg" alt="">
                     <span class="arrow-up visually-hidden">вверх</span>
                   </button>
                   <button type="button">
@@ -181,8 +185,8 @@
                       <span class="pagination-button-label">загрузить ещё</span>
                     </button>
                   </div>
-                  <div class="pagination-controls row-flex">
-                    <ul class="pagination-controls-list row-flex">
+                  <div class="pagination-controls">
+                    <ul class="pagination-controls-list">
                       <li class="pagination-controls-item">
                         <a class="pagination-controls-back pagination-link-active" href="#">назад</a>
                       </li>
@@ -214,56 +218,55 @@
     <!-- /main -->
     <!-- footer -->
     <footer class="footer">
-      <div class="footer-container col-flex">
-        <div class="footer-top">
-          <div class="footer-logo">
-            <a class="footer-logo-link" href="index.html">
-              <img class="footer-logo-img" src="images/footer-logo.svg" width="145" height="36" alt="Логотип Device.">
-            </a>
-          </div>
-        </div>
-        <div class="footer-middle">
-          <p class="footer-adress">
-            Санкт-Петербург, набережная реки Карповки, 5, литера П.
-          </p>
-          <ul class="footer-info-list row-flex">
-            <li class="footer-info-item">
-              <a class="footer-info-link" href="#">доставка</a>
-            </li>
-            <li class="footer-info-item">
-              <a class="footer-info-link" href="#">гарантия</a>
-            </li>
-            <li class="footer-info-item">
-              <a class="footer-info-link" href="#">контакты</a>
-            </li>
-          </ul>
-          <a class="footer-phone-link" href="tel:+7(812)812-12-12">
-            <span class="phone">Тел.: +7 (812) 812-12-12</span>
+      <div class="footer-container container">
+          <a class="footer-logo-link" href="index.html">
+            <img class="footer-logo-img" src="images/footer-logo.svg" width="145" height="36" alt="Логотип Device.">
           </a>
-        </div>
-        <div class="footer-bottom">
-          <div class="footer-social">
+          <div class="footer-body">
+          <div class="footer-left">
+            <p class="footer-adress">
+              Санкт-Петербург, набережная реки Карповки, 5, литера П.
+            </p>
+            <span class="footer-line line"></span>
+          </div>
+          <div class="footer-center">
+            <ul class="footer-info-list">
+              <li class="footer-info-item">
+                <a class="footer-info-link" href="#">доставка</a>
+              </li>
+              <li class="footer-info-item">
+                <a class="footer-info-link" href="#">гарантия</a>
+              </li>
+              <li class="footer-info-item">
+                <a class="footer-info-link" href="#">контакты</a>
+              </li>
+            </ul>
             <ul class="footer-social-list">
               <li class="footer-social-item">
                 <a class="footer-social-icons-link" href="#">
                   <span class="visually-hidden">Telegram</span>
                 </a>
               </li>
-              <li class="footer-social-icons-item">
+              <li class="footer-social-item">
                 <a class="footer-social-icons-link" href="#">
                   <span class="visually-hidden">Youtube</span>
                 </a>
               </li>
-              <li class="footer-social-icons-item">
+              <li class="footer-social-item">
                 <a class="footer-social-icons-link" href="#">
                   <span class="visually-hidden">Twitter</span>
                 </a>
               </li>
             </ul>
           </div>
-          <a class="footer-img-link" href="https://htmlacademy.ru/study">
-            <img src="images/footer-html-academy-link.svg" alt="переход на сайт htmlacademy.">html academy
-          </a>
+          <div class="footer-right">
+            <a class="footer-phone-link" href="tel:+7(812)812-12-12">
+              <span class="phone">Тел.: +7 (812) 812-12-12</span>
+            </a>
+            <a class="footer-img-link" href="https://htmlacademy.ru/study">
+              <img src="images/footer-html-academy-link.svg" alt="переход на сайт htmlacademy.">html academy
+            </a>
+          </div>
         </div>
       </div>
     </footer>
