@@ -12,7 +12,7 @@
       <div class="header-container header-main container">
         <div class="header-logo">
           <a class="header-logo-link" href="index.html">
-            <img src="images/logo.svg" width="145" height="36" alt="Логотип Device.">
+            <svg class="header-logo-img" xmlns="http://www.w3.org/2000/svg" width="145" height="36" fill="none"><path fill="#000" d="M27.219 0v35.3h-7.606v-2.4c-1.7 1.9-4.102 3.1-7.505 3.1C5.504 36 0 30.2 0 22.7 0 15.2 5.504 9.4 12.108 9.4c3.403 0 5.904 1.2 7.505 3.1V0h7.606Zm-7.606 22.7c0-3.8-2.501-6.2-6.004-6.2-3.502 0-6.004 2.4-6.004 6.2 0 3.8 2.502 6.2 6.004 6.2 3.503-.1 6.004-2.4 6.004-6.2ZM43.73 29.2c2.101 0 3.803-.8 4.803-1.9l6.104 3.5C52.136 34.2 48.433 36 43.63 36c-8.606 0-14.01-5.8-14.01-13.3 0-7.5 5.404-13.3 13.41-13.3 7.404 0 12.808 5.7 12.808 13.3 0 1.1-.1 2.1-.3 3H37.626c1 2.6 3.302 3.5 6.104 3.5Zm4.603-9.1c-.8-2.9-3.102-4-5.404-4-2.902 0-4.803 1.4-5.504 4h10.908ZM82.156 10.1 72.85 35.3h-8.606l-9.306-25.2h8.405l5.304 16 5.304-16h8.205ZM83.458 10.1h7.605v25.2h-7.605V10.1ZM93.665 22.7c0-7.5 5.704-13.3 13.409-13.3 4.904 0 9.207 2.6 11.408 6.5l-6.604 3.8c-.901-1.8-2.702-2.8-4.904-2.8-3.302 0-5.704 2.4-5.704 5.8 0 3.5 2.402 5.8 5.704 5.8 2.202 0 4.103-1.1 4.904-2.8l6.604 3.8c-2.101 3.9-6.404 6.5-11.408 6.5-7.705 0-13.409-5.8-13.409-13.3ZM132.892 29.2c2.101 0 3.803-.8 4.803-1.9l6.104 3.5c-2.501 3.4-6.204 5.2-11.007 5.2-8.606 0-14.01-5.8-14.01-13.3 0-7.5 5.504-13.3 13.409-13.3C139.597 9.4 145 15.1 145 22.7c0 1.1-.1 2.1-.3 3h-17.912c1 2.6 3.302 3.5 6.104 3.5Zm4.703-9.1c-.8-2.9-3.102-4-5.404-4-2.902 0-4.803 1.4-5.503 4h10.907Z"/><path fill="#510094" d="M83.458 0v10.1L91.063 0h-7.605Z"/></svg>
           </a>
         </div>
         <div class="header-body">
@@ -28,16 +28,21 @@
               </form>
             </div>
             <a class="navigation-link" href="catalog.html">каталог товаров
-              <span class="navigation-link-icon"></span>
+              <span class="navigation-link-icon icon-plus"></span>
             </a>
           </div>
           <div class="header-right">
             <div class="header-top">
               <div class="header-user-menu">
-                <a class="header-control-link" href="#">Войти</a>
+                <a class="header-control-link" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" fill="none"><path fill="#000" d="M0 12h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0S3 1.6 3 3.5c0 1.3.7 2.4 1.7 3C2.1 7.2.2 9.4 0 12Z"/></svg>
+                  Войти</a>
               </div>
               <div class="header-compare">
-                <a class="header-control-link" href="#">Сравнить</a>
+                <a class="header-control-link" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" fill="none"><path fill="#000" d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z"/></svg>
+                  Сравнить
+                </a>
               </div>
               <div class="header-basket">
                 <a class="header-control-link" href="#"><span class="basket-number-product">2</span>Корзина</a>
@@ -68,102 +73,104 @@
       <h1 class="visually-hidden">Интернет-магазин Device</h1>
       <!-- section slider -->
       <section class="main-slider container">
-        <h2 class="visually-hidden">Слайдер</h2>
-        <div class="slider-collection-list row-flex">
-          <div class="slider-collection-item">
-            <div class="slider-product-number">01</div>
-            <div class="slider-image">
-              <img src="images/slider/slider-1.png" width="560" height="560" alt="Квадрокоптер.">
+          <h2 class="visually-hidden">Слайдер</h2>
+          <div class="slider-collection-list row-flex">
+            <div class="slider-collection-item">
+              <div class="slider-product-number">01</div>
+              <div class="slider-image">
+                <img src="images/slider/slider-1.png" width="560" height="560" alt="Квадрокоптер.">
+              </div>
+              <div class="slider-description">
+                <h2 class="slider-description-heading heading">
+                  Порхает как бабочка, жалит как пчела!
+                </h2>
+                <p>
+                  Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
+                  лазером, замаскированным под стандартную камеру.
+                </p>
+                <a class="slider-link link-button" href="#">подробнее</a>
+                <div class="product-characteristic">
+                  <dl>
+                    <dt class="product-specification"><b>800 м</b></dt>
+                    <dd class="product-specification">Дальность полета</dd>
+                  </dl>
+                  <dl>
+                    <dt class="product-specification"><b>50 м</b></dt>
+                    <dd class="product-specification">Радиус поражения</dd>
+                  </dl>
+                </div>
+              </div>
             </div>
-            <div class="slider-description">
-              <h2 class="slider-description-heading heading">
-                Порхает как бабочка, жалит как пчела!
-              </h2>
-              <p>
-                Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
-                лазером, замаскированным под стандартную камеру.
-              </p>
-              <a class="slider-link link-button" href="#">подробнее</a>
-              <dl class="product-characteristic">
-                <dt class="product-specification"><b>800 м</b></dt>
-                <dd class="product-specification">Дальность полета</dd>
-              </dl>
-              <dl class="product-characteristic">
-                <dt class="product-specification"><b>50 м</b></dt>
-                <dd class="product-specification">Радиус поражения</dd>
-              </dl>
-            </div>
+            <li class="slider-collection-item visually-hidden">
+              <div class="slider-product-number">02</div>
+              <div class="slider-image">
+                <img src="images/slider/slider-2.png" width="560" height="560" alt="Фитнес-браслет.">
+              </div>
+              <div class="slider-description">
+                <h2 class="slider-description-heading heading">
+                  Худеем правильно!
+                </h2>
+                <p>
+                  Мотивирующие фитнес-браслеты помогут найти в себе силы не
+                  пропускать занятия и соблюдать диету.
+                </p>
+                <a class="slider-link link-button" href="#">подробнее</a>
+                <dl class="product-characteristic">
+                  <dt class="product-specification"><b>48 часов</b></dt>
+                  <dd class="product-specification">Без подзарядки</dd>
+                </dl>
+              </div>
+            </li>
+            <li class="slider-collection-item visually-hidden">
+              <div class="slider-product-number">03</div>
+              <div class="slider-image">
+                <img src="images/slider/slider-3.png" width="560" height="560" alt="Селфи-палка.">
+              </div>
+              <div class="slider-description">
+                <h2 class="slider-description-heading heading">
+                  Делай селфи, как Бен Стиллер!
+                </h2>
+                <p>
+                  Самая длинная палка для селфи доступна в нашем магазине.
+                  Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+                </p>
+                <a  class="slider-link link-button" href="#">подробнее</a>
+                <dl class="product-characteristic">
+                  <dt class="product-specification"><b>8,5 м</b></dt>
+                  <dd class="product-specification">Длина палки</dd>
+                </dl>
+                <dl class="product-characteristic">
+                  <dt class="product-specification"><b>5 кг</b></dt>
+                  <dd class="product-specification">Вес палки</dd>
+                </dl>
+                <dl class="product-characteristic">
+                  <dt class="product-specification"><b>Карбон</b></dt>
+                  <dd class="product-specification">Материал</dd>
+                </dl>
+              </div>
+            </li>
           </div>
-          <li class="slider-collection-item visually-hidden">
-            <div class="slider-product-number">02</div>
-            <div class="slider-image">
-              <img src="images/slider/slider-2.png" width="560" height="560" alt="Фитнес-браслет.">
-            </div>
-            <div class="slider-description">
-              <h2 class="slider-description-heading heading">
-                Худеем правильно!
-              </h2>
-              <p>
-                Мотивирующие фитнес-браслеты помогут найти в себе силы не
-                пропускать занятия и соблюдать диету.
-              </p>
-              <a class="slider-link link-button" href="#">подробнее</a>
-              <dl class="product-characteristic">
-                <dt class="product-specification"><b>48 часов</b></dt>
-                <dd class="product-specification">Без подзарядки</dd>
-              </dl>
-            </div>
-          </li>
-          <li class="slider-collection-item visually-hidden">
-            <div class="slider-product-number">03</div>
-            <div class="slider-image">
-              <img src="images/slider/slider-3.png" width="560" height="560" alt="Селфи-палка.">
-            </div>
-            <div class="slider-description">
-              <h2 class="slider-description-heading heading">
-                Делай селфи, как Бен Стиллер!
-              </h2>
-              <p>
-                Самая длинная палка для селфи доступна в нашем магазине.
-                Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
-              </p>
-              <a  class="slider-link link-button" href="#">подробнее</a>
-              <dl class="product-characteristic">
-                <dt class="product-specification"><b>8,5 м</b></dt>
-                <dd class="product-specification">Длина палки</dd>
-              </dl>
-              <dl class="product-characteristic">
-                <dt class="product-specification"><b>5 кг</b></dt>
-                <dd class="product-specification">Вес палки</dd>
-              </dl>
-              <dl class="product-characteristic">
-                <dt class="product-specification"><b>Карбон</b></dt>
-                <dd class="product-specification">Материал</dd>
-              </dl>
-            </div>
-          </li>
-        </div>
-        <div class="slider-btn-arrow">
-          <button class="slider-btn-back" type="button">
-            <img src="images/arrow/arrow-left.svg" alt="">
-            <span class="visually-hidden">предыдущая картинка</span>
-          </button>
-          <button class="slider-btn-next" type="button">
-            <img src="images/arrow/arrow-right.svg" alt="">
-            <span class="visually-hidden">следующая кратинка</span>
-          </button>
-        </div>
-        <div class="slider-dots row-flex">
-          <button class="dots" type="button">
-            <span class="visually-hidden">квадрокоптер</span>
-          </button>
-          <button class="dots" type="button">
-            <span class="visually-hidden">фитнес браслет</span>
-          </button>
-          <button class="dots" type="button">
-            <span class="visually-hidden">палка для селфи</span>
-          </button>
-        </div>
+          <div class="slider-btn-arrow">
+            <button class="slider-btn-back" type="button">
+              <img src="images/arrow/arrow-left.svg" alt="">
+              <span class="visually-hidden">предыдущая картинка</span>
+            </button>
+            <button class="slider-btn-next" type="button">
+              <img src="images/arrow/arrow-right.svg" alt="">
+              <span class="visually-hidden">следующая кратинка</span>
+            </button>
+          </div>
+          <div class="slider-dots row-flex">
+            <button class="dots" type="button">
+              <span class="visually-hidden">квадрокоптер</span>
+            </button>
+            <button class="dots" type="button">
+              <span class="visually-hidden">фитнес браслет</span>
+            </button>
+            <button class="dots" type="button">
+              <span class="visually-hidden">палка для селфи</span>
+            </button>
+          </div>
       </section>
       <!-- section catalog-category -->
       <section class="catalog-category container">
@@ -188,7 +195,7 @@
             <li class="catalog-category-item">
               <a class="catalog-category-link" href="#">
                 <div class="catalog-category-images">
-                  <img src="images/catalog-category/catalog-category-3.png" width="81" height="77" alt="Экшн-камеры.">
+                  <img src="images/catalog-category/catalog-category-3.png" width="71" height="87" alt="Экшн-камеры.">
                 </div>
                 Экшн-камеры
               </a>
@@ -242,13 +249,15 @@
           </ul>
           <div class="service-description">
             <div class="service-description-delivery">
-              <h2 class="service-description-heading heading">Доставка</h2>
-              <p>
-                Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-                совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
-                на ваш этаж.
-              </p>
-              <div class="service-description-image"></div>
+              <div class="service-description-wrap">
+                <h2 class="service-description-heading heading">Доставка</h2>
+                <p>
+                  Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+                  совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
+                  на ваш этаж.
+                </p>
+              </div>
+              <img class="service-description-image" src="./images/services/services-1.png" alt="">
             </div>
             <div class="service-description-warranty visually-hidden">
               <h2 class="service-description-heading heading">Гарантия</h2>
@@ -332,7 +341,6 @@
             <p>
               Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
               распаковками, а также акции, спецпредложения и вот это вот всё.
-              lorem
             </p>
           </div>
           <div class="subscription-bottom">
@@ -342,7 +350,9 @@
               <label for="subscription-submit"></label>
               <input class="subscription-button" id="subscription-submit" type="submit" name="submit" value="Подписаться">
             </form>
-            <span class="subscription-free-text">Это бесплатно</span>
+            <span class="subscription-free-text">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none"><path fill="#08AF00" d="m14.498 0-9.6 9.3L.498 5v4.7l4.5 4.3 9.5-9.3V0Z"/></svg>
+              Это бесплатно</span>
           </div>
         </div>
       </section>
@@ -352,7 +362,7 @@
     <footer class="footer">
       <div class="footer-container container">
           <a class="footer-logo-link" href="index.html">
-            <img class="footer-logo-img" src="images/footer-logo.svg" width="145" height="36" alt="Логотип Device.">
+            <svg class="footer-logo-img" xmlns="http://www.w3.org/2000/svg" width="145" height="36" fill="none"><path fill="#FFC700" d="M27.219 0v35.3h-7.606v-2.4c-1.7 1.9-4.102 3.1-7.505 3.1C5.504 36 0 30.2 0 22.7 0 15.2 5.504 9.4 12.108 9.4c3.403 0 5.904 1.2 7.505 3.1V0h7.606Zm-7.606 22.7c0-3.8-2.501-6.2-6.004-6.2-3.502 0-6.004 2.4-6.004 6.2 0 3.8 2.502 6.2 6.004 6.2 3.503-.1 6.004-2.4 6.004-6.2ZM43.73 29.2c2.102 0 3.803-.8 4.803-1.9l6.105 3.5C52.136 34.2 48.433 36 43.63 36c-8.606 0-14.01-5.8-14.01-13.3 0-7.5 5.404-13.3 13.41-13.3 7.405 0 12.809 5.7 12.809 13.3 0 1.1-.1 2.1-.3 3H37.625c1 2.6 3.302 3.5 6.104 3.5Zm4.603-9.1c-.8-2.9-3.102-4-5.403-4-2.902 0-4.804 1.4-5.504 4h10.907ZM82.156 10.1 72.85 35.3h-8.606l-9.306-25.2h8.405l5.304 16 5.304-16h8.205ZM83.457 10.1h7.606v25.2h-7.606V10.1ZM93.665 22.7c0-7.5 5.703-13.3 13.409-13.3 4.903 0 9.206 2.6 11.408 6.5l-6.605 3.8c-.901-1.8-2.702-2.8-4.903-2.8-3.303 0-5.704 2.4-5.704 5.8 0 3.5 2.401 5.8 5.704 5.8 2.201 0 4.103-1.1 4.903-2.8l6.605 3.8c-2.102 3.9-6.405 6.5-11.408 6.5-7.706 0-13.41-5.8-13.41-13.3ZM132.892 29.2c2.101 0 3.802-.8 4.803-1.9l6.104 3.5c-2.502 3.4-6.204 5.2-11.007 5.2-8.606 0-14.01-5.8-14.01-13.3 0-7.5 5.504-13.3 13.409-13.3C139.596 9.4 145 15.1 145 22.7c0 1.1-.1 2.1-.3 3h-17.913c1.001 2.6 3.303 3.5 6.105 3.5Zm4.703-9.1c-.801-2.9-3.102-4-5.404-4-2.902 0-4.803 1.4-5.504 4h10.908ZM83.457 0v10.1L91.063 0h-7.606Z"/></svg>
           </a>
           <div class="footer-body">
           <div class="footer-left">
@@ -375,17 +385,17 @@
             </ul>
             <ul class="footer-social-list">
               <li class="footer-social-item">
-                <a class="footer-social-icons-link" href="#">
-                  <span class="visually-hidden">Telegram</span>
+                <a class="footer-social-icons-link footer-icons-telegram" href="#">
+                  <span class="visually-hidden ">Telegram</span>
                 </a>
               </li>
               <li class="footer-social-item">
-                <a class="footer-social-icons-link" href="#">
+                <a class="footer-social-icons-link footer-icons-youtube" href="#">
                   <span class="visually-hidden">Youtube</span>
                 </a>
               </li>
               <li class="footer-social-item">
-                <a class="footer-social-icons-link" href="#">
+                <a class="footer-social-icons-link footer-icons-twitter" href="#">
                   <span class="visually-hidden">Twitter</span>
                 </a>
               </li>
@@ -396,7 +406,7 @@
               <span class="phone">Тел.: +7 (812) 812-12-12</span>
             </a>
             <a class="footer-img-link" href="https://htmlacademy.ru/study">
-              <img src="images/footer-html-academy-link.svg" alt="переход на сайт htmlacademy.">html academy
+              <img class="footer-logo-htmlacademy" width="115" height="33" src="images/footer-html-academy-link.svg" alt="переход на сайт htmlacademy.">
             </a>
           </div>
         </div>
