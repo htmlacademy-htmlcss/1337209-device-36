@@ -87,6 +87,7 @@
 
   .link-button-active:hover {
     color: #ffe17f;
+    background-color: #000000;
   }
 
   /* header */
@@ -264,6 +265,10 @@
     margin-right: 12px;
     width: 13px;
     height: 12px;
+  }
+
+  .header-user-menu .header-control-link {
+    white-space: nowrap;
   }
 
 
@@ -794,6 +799,11 @@
 
   /* catalog-product-cards */
 
+  .catalog-product {
+    max-width: 840px;
+    width: 100%;
+  }
+
   .catalog-product-top {
     display: flex;
     justify-content: space-between;
@@ -803,18 +813,18 @@
   }
 
   .catalog-product-cards {
+    max-width: 760px;
     padding: 70px 40px;
 
     background-color: #ffffff;
   }
 
   .catalog-product-cards-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    justify-items: center;
     gap: 40px;
 
-    max-width: 760px;
     margin: 0;
     margin-bottom: 40px;
     padding: 0;
@@ -952,10 +962,6 @@
     list-style: none;
   }
 
-  .service-item {
-    padding-right: 120px;
-  }
-
   .service-item:not(.service-item:nth-last-child(1)) {
     margin-bottom: 35px;
   }
@@ -988,16 +994,13 @@
   .service-button {
     width: 100%;
     padding: 10px 0;
+    padding-right: 120px;
 
     font-family: "Raleway";
     font-size: 18px;
     font-weight: 800;
     line-height: 21px;
     letter-spacing: 0.2em;
-  }
-
-  .service-item:hover {
-    background: #000000;
   }
 
   /* express-delivery */
@@ -1362,6 +1365,7 @@
     align-items: end;
     gap: 60px;
 
+    width: 234px;
     margin-left: auto;
 
     font-size: 16px;
