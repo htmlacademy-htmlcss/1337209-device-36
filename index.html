@@ -52,13 +52,13 @@
               <nav class="header-navigation">
                 <ul class="navigation-list">
                   <li class="navigation-item">
-                    <a class="navigation-link" href="#">доставка</a>
+                    <a class="navigation-link navigation-link-active" href="#">доставка</a>
                   </li>
                   <li class="navigation-item">
-                    <a class="navigation-link" href="#">гарантия</a>
+                    <a class="navigation-link navigation-link-active" href="#">гарантия</a>
                   </li>
                   <li class="navigation-item">
-                    <a class="navigation-link" href="#">контакты</a>
+                    <a class="navigation-link navigation-link-active" href="#">контакты</a>
                   </li>
                 </ul>
               </nav>
@@ -101,7 +101,7 @@
                 </div>
               </div>
             </div>
-            <li class="slider-collection-item visually-hidden">
+            <div class="slider-collection-item visually-hidden">
               <div class="slider-product-number">02</div>
               <div class="slider-image">
                 <img src="images/slider/slider-2.png" width="560" height="560" alt="Фитнес-браслет.">
@@ -120,8 +120,8 @@
                   <dd class="product-specification">Без подзарядки</dd>
                 </dl>
               </div>
-            </li>
-            <li class="slider-collection-item visually-hidden">
+            </div>
+            <div class="slider-collection-item visually-hidden">
               <div class="slider-product-number">03</div>
               <div class="slider-image">
                 <img src="images/slider/slider-3.png" width="560" height="560" alt="Селфи-палка.">
@@ -148,7 +148,7 @@
                   <dd class="product-specification">Материал</dd>
                 </dl>
               </div>
-            </li>
+            </div>
           </div>
           <div class="slider-btn-arrow">
             <button class="slider-btn-back" type="button">
@@ -230,51 +230,50 @@
       <section class="service">
         <div class="service-container container">
           <h2 class="visually-hidden">Клиентский сервис</h2>
-          <ul class="service-list">
-            <li class="service-item">
-              <button class="service-button link-button link-button-active" type="button">
-                Доставка
-              </button>
-            </li>
-            <li class="service-item">
-              <button class="service-button link-button link-button-active" type="button">
-                Гарантия
-              </button>
-            </li>
-            <li class="service-item">
-              <button class="service-button link-button link-button-active" type="button">
-                Кредит
-              </button>
-            </li>
-          </ul>
           <div class="service-description">
-            <div class="service-description-delivery">
+            <input class="delivery" type="radio" name="tabs" id="service-delivery" checked>
+            <input class="warrenty" type="radio" name="tabs" id="service-warrenty">
+            <input class="credit" type="radio" name="tabs" id="service-credit">
+            <label class="service-label" for="service-delivery"><span>Доставка</span></label>
+            <label class="service-label" for="service-warrenty"><span>Гарантия</span></label>
+            <label class="service-label" for="service-credit"><span>Кредит</span></label>
+            <div class="service-description-delivery service-box">
               <div class="service-description-wrap">
-                <h2 class="service-description-heading heading">Доставка</h2>
-                <p>
-                  Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-                  совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
-                  на ваш этаж.
-                </p>
+                <div class="service-description-text">
+                  <h2 class="service-description-heading heading">Доставка</h2>
+                  <p>
+                    Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+                    совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
+                    на ваш этаж.
+                  </p>
+                </div>
+                <img class="service-description-image" width="136" height="164" src="./images/services/services-1.png" alt="dfgsdg">
               </div>
-              <img class="service-description-image" src="./images/services/services-1.png" alt="">
             </div>
-            <div class="service-description-warranty visually-hidden">
-              <h2 class="service-description-heading heading">Гарантия</h2>
-              <p>
-                Если из-за возгорания купленного у нас товара у вас сгорит дом —
-                не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
-              </p>
-              <div class="service-description-image"></div>
+            <div class="service-description-warrenty service-box">
+              <div class="service-description-wrap">
+                <div class="service-description-text">
+                  <h2 class="service-description-heading heading">Гарантия</h2>
+                  <p>
+                    Если из-за возгорания купленного у нас товара у вас сгорит дом —
+                    не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+                  </p>
+                </div>
+                <img src="./images/services/services-2.png" width="171" height="195" alt="">
+              </div>
             </div>
-            <div class="service-description-credit visually-hidden">
-              <h2 class="service-description-heading heading">Кредит</h2>
-              <p>
-                Залезть в долговую яму стало проще! Кредитные консультанты
-                подберут для вас наиболее выгодные условия кредита. Выгодные для
-                банка, разумеется.
-              </p>
-              <div class="service-description-image"></div>
+            <div class="service-description-credit service-box">
+              <div class="service-description-wrap">
+                <div class="service-description-text">
+                  <h2 class="service-description-heading heading">Кредит</h2>
+                  <p>
+                    Залезть в долговую яму стало проще! Кредитные консультанты
+                    подберут для вас наиболее выгодные условия кредита. Выгодные для
+                    банка, разумеется.
+                  </p>
+                </div>
+                <img src="./images/services/services-3.png" width="156" height="188" alt="">
+              </div>
             </div>
           </div>
         </div>
