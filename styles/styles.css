@@ -105,7 +105,6 @@
     z-index: -1;
   }
 
-
   .link-button:hover {
     color: #000000;
     background-color: #ffe17f;
@@ -119,6 +118,8 @@
     color: #ffe17f;
     background-color: #000000;
   }
+
+
 
   /* header */
 
@@ -587,6 +588,18 @@
     left: 540px;
   }
 
+  .slider-btn-back:hover,
+  .slider-btn-next:hover,
+  .dots:hover {
+    opacity: 60%;
+  }
+
+  .slider-btn-back:active,
+  .slider-btn-next:active,
+  .dots:active {
+    opacity: 30%;
+  }
+
   /* dots */
 
   .slider-dots {
@@ -604,10 +617,6 @@
     background-color: #ffffff;
 
     cursor: pointer;
-  }
-
-  .dots:hover {
-    background-color: #000000;
   }
 
   .dots:nth-last-child(1) {
@@ -840,6 +849,15 @@
 
     color: #000000;
   }
+
+  .catalog-category-item:hover .catalog-category-images {
+    background-color: #ffc700;
+  }
+
+  .catalog-category-item:active {
+    opacity: 30%;
+  }
+
 
   .catalog-product-top-arrow {
     display: flex;
@@ -1171,6 +1189,18 @@
     background-color: #f0f0f0;
   }
 
+  .express-delivery-link:active {
+    opacity: 30%;
+  }
+
+  .express-delivery-link:hover .express-delivery-icon {
+    background-color: #ffc700;
+  }
+
+  .express-delivery-link:hover .express-delivery-i {
+    opacity: 100%;
+  }
+
   .express-delivery-icon {
     display: block;
 
@@ -1198,6 +1228,8 @@
     background-image: url("../images/express-delivery-i.svg");
     background-position: center;
     background-repeat: no-repeat;
+
+    opacity: 50%;
   }
 
   /* section company */
@@ -1210,6 +1242,10 @@
 
   .company h2 {
     margin-top: 0;
+  }
+
+  .company p {
+    margin-bottom: 30px;
   }
 
   .company-list {
@@ -1256,6 +1292,10 @@
     width: 532px;
   }
 
+  .company-about-heading {
+    margin-bottom: 48px;
+  }
+
   .company-contact {
     width: 532px;
 
@@ -1263,10 +1303,28 @@
   }
 
   .company-contact-subheading {
+    margin-bottom: 15px;
+
     font-weight: 700;
     font-size: 24px;
 
     color: #444444;
+  }
+
+  .company-contact-adress {
+    margin-bottom: 30px;
+  }
+
+  .company-contact-adress p {
+    margin: 0;
+  }
+
+  .company-contact-tel {
+    color: #000000;
+  }
+
+  .company-time-work {
+    margin-bottom: 40px;
   }
 
   .company-line {
@@ -1414,7 +1472,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 60px;
+    gap: 62px;
 
     margin-right: auto;
 
@@ -1473,8 +1531,46 @@
     text-transform: uppercase;
   }
 
+  .footer-info-link {
+    text-decoration: none;
+  }
+
+  .footer-info-link:hover {
+    color: #ffc700;
+    border-bottom: 2px solid #ffc700;
+  }
+
+  .footer-info-link:active {
+    color: #ffc700;
+
+    border-bottom: 2px solid #ffc700;
+    opacity: 30%;
+  }
+
   .footer-social-item {
     position: relative;
+  }
+
+  .footer-social-icons-link {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .footer-social-icons-link:hover {
+    background-color: #ffc700;
+  }
+
+  .footer-social-item:active .footer-icons-telegram::before,
+  .footer-social-item:active .footer-icons-youtube::before,
+  .footer-social-item:active .footer-icons-twitter::before {
+    opacity: 0.3;
   }
 
   .footer-icons-telegram::before,
@@ -1538,20 +1634,25 @@
     margin-right: 0;
   }
 
-  .footer-info-link {
-    text-decoration: none;
+  .footer-phone-link:hover {
+    color: #ffc700;
   }
 
-  .footer-social-icons-link {
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
+  .footer-phone-link:active {
+    color: #ffc700;
+    opacity: 30%;
+  }
 
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+  .footer-img-link svg {
+    color: #ffc700;
+  }
 
-    background-color: rgba(255, 255, 255, 0.3);
+  .footer-img-link svg:hover {
+    color: #ffffff;
+  }
+
+  .footer-right svg:active {
+    fill-opacity: 30%;
   }
 
   .footer-adress {
@@ -1559,7 +1660,6 @@
 
     line-height: 20px;
   }
-
 
   .visually-hidden {
     position: absolute;
