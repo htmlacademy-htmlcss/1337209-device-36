@@ -9,7 +9,7 @@
   <body>
     <!-- header -->
     <header class="header">
-      <div class="header-container header-main container">
+      <div class="header-container container">
         <div class="header-logo">
           <a class="header-logo-link" href="index.html">
             <svg class="header-logo-img" xmlns="http://www.w3.org/2000/svg" width="145" height="36" fill="none"><path fill="#000" d="M27.219 0v35.3h-7.606v-2.4c-1.7 1.9-4.102 3.1-7.505 3.1C5.504 36 0 30.2 0 22.7 0 15.2 5.504 9.4 12.108 9.4c3.403 0 5.904 1.2 7.505 3.1V0h7.606Zm-7.606 22.7c0-3.8-2.501-6.2-6.004-6.2-3.502 0-6.004 2.4-6.004 6.2 0 3.8 2.502 6.2 6.004 6.2 3.503-.1 6.004-2.4 6.004-6.2ZM43.73 29.2c2.101 0 3.803-.8 4.803-1.9l6.104 3.5C52.136 34.2 48.433 36 43.63 36c-8.606 0-14.01-5.8-14.01-13.3 0-7.5 5.404-13.3 13.41-13.3 7.404 0 12.808 5.7 12.808 13.3 0 1.1-.1 2.1-.3 3H37.626c1 2.6 3.302 3.5 6.104 3.5Zm4.603-9.1c-.8-2.9-3.102-4-5.404-4-2.902 0-4.803 1.4-5.504 4h10.908ZM82.156 10.1 72.85 35.3h-8.606l-9.306-25.2h8.405l5.304 16 5.304-16h8.205ZM83.458 10.1h7.605v25.2h-7.605V10.1ZM93.665 22.7c0-7.5 5.704-13.3 13.409-13.3 4.904 0 9.207 2.6 11.408 6.5l-6.604 3.8c-.901-1.8-2.702-2.8-4.904-2.8-3.302 0-5.704 2.4-5.704 5.8 0 3.5 2.402 5.8 5.704 5.8 2.202 0 4.103-1.1 4.904-2.8l6.604 3.8c-2.101 3.9-6.404 6.5-11.408 6.5-7.705 0-13.409-5.8-13.409-13.3ZM132.892 29.2c2.101 0 3.803-.8 4.803-1.9l6.104 3.5c-2.501 3.4-6.204 5.2-11.007 5.2-8.606 0-14.01-5.8-14.01-13.3 0-7.5 5.504-13.3 13.409-13.3C139.597 9.4 145 15.1 145 22.7c0 1.1-.1 2.1-.3 3h-17.912c1 2.6 3.302 3.5 6.104 3.5Zm4.703-9.1c-.8-2.9-3.102-4-5.404-4-2.902 0-4.803 1.4-5.503 4h10.907Z"/><path fill="#510094" d="M83.458 0v10.1L91.063 0h-7.605Z"/></svg>
@@ -27,25 +27,42 @@
                 </label>
               </form>
             </div>
-            <a class="navigation-link" href="catalog.html">каталог товаров
-              <span class="navigation-link-icon icon-plus"></span>
-            </a>
+            <div class="header-bottom">
+              <input class="header-catalog-checkbox" type="checkbox" id="catalog-product">
+              <label class="header-navigation-button" for="catalog-product">Каталог товаров
+              </label>
+              <div class="header-drop-catalog">
+                <ul class="header-drop-catalog-list">
+                  <li class="header-drop-catalog-item"><a class="header-drop-catalog-link" href="#">Виртуальная реальность</a></li>
+                  <li class="header-drop-catalog-item"><a class="header-drop-catalog-link" href="catalog.html">Моноподы для селфи</a></li>
+                  <li class="header-drop-catalog-item"><a class="header-drop-catalog-link" href="#">Экшн-камеры</a></li>
+                </ul>
+                <ul class="header-drop-catalog-list">
+                  <li class="header-drop-catalog-item"><a class="header-drop-catalog-link" href="#">Фитнес-браслеты</a></li>
+                  <li class="header-drop-catalog-item"><a class="header-drop-catalog-link" href="#">Умные часы</a></li>
+                </ul>
+                <ul class="header-drop-catalog-list">
+                  <li class="header-drop-catalog-item"><a class="header-drop-catalog-link" href="#">Квадрокоптеры</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
           <div class="header-right">
             <div class="header-top">
               <div class="header-user-menu">
                 <a class="header-control-link" href="#">
-                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="13" height="12" fill="none"><path fill="#000" d="M0 12h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0S3 1.6 3 3.5c0 1.3.7 2.4 1.7 3C2.1 7.2.2 9.4 0 12Z"/></svg>
                   Войти</a>
               </div>
-              <div class="header-compare">
-                <a class="header-control-link" href="#">
-                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="10" height="12" fill="none"><path fill="#000" d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z"/></svg>
-                  Сравнить
-                </a>
-              </div>
-              <div class="header-basket">
-                <a class="header-control-link" href="#"><span class="basket-number-product">2</span>Корзина</a>
+              <div class="header-control-menu">
+                <div class="header-compare">
+                  <a class="header-control-link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" fill="none"><path fill="#000" d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z"/></svg>
+                    Сравнить
+                  </a>
+                </div>
+                <div class="header-basket">
+                  <a class="header-control-link" href="#"><span class="basket-number-product">2</span>Корзина</a>
+                </div>
               </div>
             </div>
             <div class="header-bottom">
@@ -232,10 +249,10 @@
           <h2 class="visually-hidden">Клиентский сервис</h2>
           <div class="service-description">
             <input class="delivery" type="radio" name="tabs" id="service-delivery" checked>
-            <input class="warrenty" type="radio" name="tabs" id="service-warrenty">
-            <input class="credit" type="radio" name="tabs" id="service-credit">
             <label class="service-label" for="service-delivery"><span>Доставка</span></label>
+            <input class="warrenty" type="radio" name="tabs" id="service-warrenty">
             <label class="service-label" for="service-warrenty"><span>Гарантия</span></label>
+            <input class="credit" type="radio" name="tabs" id="service-credit">
             <label class="service-label" for="service-credit"><span>Кредит</span></label>
             <div class="service-description-delivery service-box">
               <div class="service-description-wrap">
@@ -311,7 +328,7 @@
         <div class="company-contact">
           <div class="company-contact-wrapper">
             <span class="company-line line"></span>
-            <h2 class="company-contact-heading heading">Контаткы</h2>
+            <h2 class="company-contact-heading heading">Контакы</h2>
             <p>
               Вы можете забрать товар сами, заехав в наш офис. Заодно сможете
               проверить работоспособность покупки.
