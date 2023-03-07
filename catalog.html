@@ -332,5 +332,45 @@
       </div>
     </footer>
     <!-- /footer -->
+    <!-- modal -->
+    <div class="modal-container modal-container-close visually-hidden">
+      <div class="modal modal-inner">
+        <div class="modal-header">
+          <h2 class="modal-heading">Доставка под заказ</h2>
+          <button class="modal-close-button" type="reset"><img src="./images/modal/modal-close.svg" alt="закрыть окно."></button>
+        </div>
+        <form action="https://echo.htmlacademy.ru/" method="get">
+          <div class="fieldset-personal-info">
+            <div class="fieldset-wrap">
+              <label for="name">Ваше имя</label>
+              <input class="fieldset-input-name" type="text" name="name" id="name" placeholder="Введите имя" required>
+            </div>
+            <div class="fieldset-wrap">
+              <label for="e-mail">Ваш e-mail:</label>
+              <input class="fieldset-input-mail" type="e-mail" name="e-mail" id="e-mail" required>
+            </div>
+          </div>
+          <div class="fieldset-delivery-info">
+            <div class="fieldset-wrap">
+              <label for="message">Что нужно привезти:</label>
+              <textarea name="message" id="" cols="30" rows="10" id="message" placeholder="В свободной форме"></textarea>
+            </div>
+            <div class="fieldset-wrap ">
+              <p>Количество:
+                <span class="tooltip"></span>
+                <span class="tooltip-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                к провозу багажа.</span>
+              </p>
+              <div class="counter-wrap">
+                <button class="counter-button-minus" type="button"><img src="./images/modal/modal-counter-minus.svg" alt="минус один товар"></button>
+                <input class="counter-screen" type="number" name="result" id="counter-screen" value="1" required>
+                <button class="counter-button-plus" type="button"><img src="./images/modal/modal-counter-plus.svg" alt="плюс один товар"></button>
+              </div>
+            </div>
+          </div>
+          <button class="link-button" type="submit">отправить</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
