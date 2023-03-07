@@ -78,7 +78,7 @@
     font-family: "Raleway";
     font-weight: 800;
     line-height: 21px;
-    letter-spacing: 2px;
+    letter-spacing: 0.2em;
     text-decoration: none;
     text-transform: uppercase;
     color: #000000;
@@ -109,7 +109,6 @@
   }
 
   .link-button:focus-visible {
-    outline: none;
     outline: 2px solid #af4fff;
   }
 
@@ -155,8 +154,6 @@
 
     width: 145px;
     height: 36px;
-
-    background-image: url("../images/logo.svg");
   }
 
   .header-logo-link:focus-visible {
@@ -233,8 +230,11 @@
   }
 
   .header-catalog-checkbox {
+    position: relative;
     display: none;
   }
+
+
 
   .header-drop-catalog {
     box-sizing: border-box;
@@ -277,6 +277,10 @@
     padding-bottom: 0;
 
     list-style: none;
+  }
+
+  .header-drop-catalog-list:focus-within .header-drop-catalog-link:focus-visible {
+    outline: 2px solid #af4fff;
   }
 
   .header-drop-catalog-item {
@@ -332,6 +336,8 @@
     height: 40px;
   }
 
+
+
   .header-control-link:focus-visible {
     outline: 2px solid #af4fff;
     opacity: 1;
@@ -355,6 +361,8 @@
 
     width: 517px;
   }
+
+  /* search-field */
 
   .search-field {
     position: relative;
@@ -423,6 +431,8 @@
     opacity: 0.2;
   }
 
+  /* header-search-button */
+
   .header-search-button {
     position: relative;
     width: 158px;
@@ -487,6 +497,8 @@
 
   .header-control-menu {
     display: flex;
+
+    position: relative;
   }
 
   .header-compare {
@@ -550,6 +562,8 @@
     z-index: 1;
   }
 
+
+
   .basket-number-product {
     display: flex;
     justify-content: center;
@@ -566,6 +580,147 @@
 
     border-radius: 50%;
     z-index: 2;
+  }
+
+  /* basket-popover */
+
+  .basket-popover {
+    position: absolute;
+    top: 40px;
+    right: -77px;
+    width: 320px;
+
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+
+    background-color: #000000;
+
+    z-index: 100;
+  }
+
+  .basket-popover::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -6px;
+    margin: auto;
+
+    width: 0;
+    height: 0;
+
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 6px solid #000000;
+  }
+
+  .basket-popover-container {
+    padding: 20px;
+  }
+
+  .basket-popover:focus-within .basket-pruduct-link:focus-visible {
+    outline: 2px solid #af4fff;
+  }
+
+  .basket-popover:focus-within .basket-product-close:focus-visible {
+    outline: 2px solid #af4fff;
+  }
+
+
+  .basket-pruduct-link {
+    display: inline-flex;
+    gap: 23px;
+
+    width: 100%;
+
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .basket-pruduct-link:hover {
+    opacity: 0.6;
+  }
+
+  .basket-pruduct-link:active {
+    opacity: 0.3;
+  }
+
+  .basket-pruduct {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .basket-pruduct-link p {
+    width: 120px;
+    margin: 0;
+  }
+
+  .basket-product-close {
+    margin-left: auto;
+    padding: 0;
+
+    background-color: transparent;
+
+    cursor: pointer;
+    border: none;
+  }
+
+  .basket-product-close:hover {
+    opacity: 0.6;
+  }
+
+  .basket-product-close:active {
+    opacity: 0.3;
+  }
+
+  .basket-summary {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 15px 20px;
+
+    background-color: #1a1a1a;
+  }
+
+  .basket-button {
+    padding: 20px;
+  }
+
+  .basket-link-button {
+    display: block;
+
+    padding: 15px 0;
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+    letter-spacing: 0.2em;
+
+    background-color: #ffffff;
+  }
+
+  .basket-link-button:focus-visible {
+    outline: 2px solid #af4fff;
+  }
+
+  .basket-link-button:hover {
+    background-color: #ffe17f;
+  }
+
+  .basket-link-button:active {
+    background-color: #ffe17f;
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  .basket-link-button:disabled {
+    color: rgba(0, 0, 0, 0.3);
   }
 
   /* header-navigation */
@@ -1844,10 +1999,6 @@
 
     width: 145px;
     height: 36px;
-
-    background-image: url("../images/footer-logo.svg");
-    background-repeat: no-repeat;
-    background-position: center;
   }
 
   .footer-logo-link:focus-visible {
