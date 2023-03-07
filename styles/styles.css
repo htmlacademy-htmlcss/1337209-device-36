@@ -1140,13 +1140,99 @@
     border-bottom: 3px solid #000000;
   }
 
-  .filter-block label {
-    display: block;
-  }
-
   .product-filter-price label {
     margin-bottom: 35px;
   }
+
+  /*filter-range */
+
+  .range {
+    padding-top: 9px;
+  }
+
+  .range-scale {
+    width: 200px;
+    height: 2px;
+
+    margin-bottom: 11px;
+
+    background-color: #dcdcdc;
+  }
+
+  .range-bar {
+    position: relative;
+    width: 119px;
+    height: 2px;
+
+    background-color: #000000;
+  }
+
+  .range-toggle {
+    position: absolute;
+    box-sizing: border-box;
+
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%;
+    border: 2px solid #000000;
+
+    cursor: pointer;
+    outline: none;
+  }
+
+  .range-toggle:hover {
+    border-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .range-toggle:active {
+    background-color: #000000;
+  }
+
+  .range-toggle::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .range-toggle:focus-visible::before {
+    outline: 2px solid #af4fff;
+    outline-offset: 4px;
+  }
+
+  .toggle-min {
+    top: -9px;
+    left: -9px;
+  }
+
+  .toggle-max {
+    top: -9px;
+    right: -9px;
+  }
+
+  .range-input {
+    width: 55px;
+    background-color: transparent;
+    border: none;
+    -webkit-appearance: none;
+  }
+
+
+
+
+
+  .range-container-inputs {
+    position: relative;
+    left: -12px;
+    display: flex;
+    gap: 25px;
+  }
+
+  /* filter-checkbox */
 
   .product-filter-checkbox label {
     display: flex;
@@ -1158,14 +1244,142 @@
     margin-bottom: 35px;
   }
 
+  .catalog-input-checkbox {
+    position: absolute;
+    outline: none;
+    z-index: -1;
+    opacity: 0;
+  }
+
+
+  .filter-checkbox-label {
+    position: relative;
+
+    padding-left: 36px;
+
+    line-height: 20px;
+    cursor: pointer;
+  }
+
+  .filter-checkbox-label::after {
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    width: 20px;
+    height: 20px;
+
+    border: 2px solid #CCCCCC;
+    border-radius: 3px;
+  }
+
+  .catalog-input-checkbox:checked + .filter-checkbox-label::after {
+    background-image: url("../images/custom-checkbox.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border: 2px solid #000000;
+  }
+
+  .catalog-input-checkbox:focus-visible + .filter-checkbox-label::after {
+    outline: 2px solid #af4fff;
+    outline-offset: 2px;
+    border-radius: 0;
+  }
+
+  .filter-checkbox-label:hover {
+    opacity: 0.6;
+  }
+
+  .filter-checkbox-label:active {
+    opacity: 0.3;
+  }
+
+  .catalog-input-checkbox:disabled + .filter-checkbox-label {
+    opacity: 0.2;
+  }
+
+  /* filter-bluetooth  (radio-button) */
+
   .product-filter-bluetooth {
-    margin-bottom: 45px;
+    margin-bottom: 35px;
 
     border-bottom: none;
   }
 
   .product-filter-bluetooth label:not(.product-filter-bluetooth label:nth-last-child(1)) {
     margin-bottom: 20px;
+  }
+
+  .catalog-input-radio {
+    position: absolute;
+
+    width: 14px;
+    height: 14px;
+
+    z-index: -1;
+    opacity: 0;
+  }
+
+  .product-filter-bluetooth .filter-label {
+    display: block;
+
+    position: relative;
+
+
+    padding-left: 36px;
+
+    cursor: pointer;
+  }
+
+  .filter-label::after {
+    box-sizing: border-box;
+
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    width: 20px;
+    height: 20px;
+
+    border: 2px solid #CCCCCC;
+    border-radius: 50%;
+    border-color: #CCCCCC;
+  }
+
+  .filter-label::before {
+    content: "";
+
+    width: 20px;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .catalog-input-radio:checked + .filter-label::after {
+    border-color: #000000;
+
+    background-image: url("../images/radio-circle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .catalog-input-radio:focus-visible + .filter-label::before {
+    outline: 2px solid #af4fff;
+    outline-offset: 2px;
+  }
+
+  .catalog-input-radio:disabled + .filter-label {
+    opacity: 0.2;
   }
 
   .filter-submit-button {

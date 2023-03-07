@@ -140,38 +140,49 @@
                 <h2 class="product-filter-heading">Фильтр:</h2>
                 <fieldset class="product-filter-price filter-block">
                   <legend class="product-filter-title">Стоимость</legend>
-                  <label class="filter-label">
-                    <input class="catalog-input-range" type="range" name="range" min="0" max="8000">
-                  </label>
+                  <div class="range">
+                    <div class="range-scale">
+                      <div class="range-bar">
+                        <button class="range-toggle toggle-min"></button>
+                        <button class="range-toggle toggle-max"></button>
+                      </div>
+                    </div>
+                    <div class="range-container-inputs">
+                      <label class="fieldset-range-label" >от
+                        <input class="range-input" type="number" value="0">
+                      </label>
+                      <label class="fieldset-range-label" >до
+                        <input class="range-input" type="number" value="5000" max="8000">
+                      </label>
+                    </div>
+                  </div>
                 </fieldset>
                 <fieldset class="product-filter-checkbox filter-block">
                   <legend class="product-filter-title">Цвет</legend>
-                  <label class="filter-label">
-                    <input class="catalog-input-checkbox" type="checkbox" name="black" checked>чёрный
-                  </label>
-                  <label class="filter-label">
-                    <input class="catalog-input-checkbox" type="checkbox" name="white" checked>белый
-                  </label>
-                  <label class="filter-label">
-                    <input class="catalog-input-checkbox" type="checkbox" name="blue">синий
-                  </label>
-                  <label class="filter-label">
-                    <input class="catalog-input-checkbox" type="checkbox" name="red">красный
-                  </label>
-                  <label class="filter-label">
-                    <input class="catalog-input-checkbox" type="checkbox" name="pink">розовый
-                  </label>
+                  <input class="catalog-input-checkbox" type="checkbox" name="black" id="input-black" checked>
+                  <label class="filter-checkbox-label" for="input-black">Чёрный</label>
+
+                  <input class="catalog-input-checkbox" type="checkbox" name="white" id="input-white" checked>
+                  <label class="filter-checkbox-label" for="input-white">Белый</label>
+
+                  <input class="catalog-input-checkbox" type="checkbox" name="blue" id="input-blue">
+                  <label class="filter-checkbox-label" for="input-blue">Синий</label>
+
+                  <input class="catalog-input-checkbox" type="checkbox" name="red" id="input-red">
+                  <label class="filter-checkbox-label" for="input-red">Красный</label>
+
+                  <input class="catalog-input-checkbox" type="checkbox" name="pink" id="input-pink">
+                  <label class="filter-checkbox-label" for="input-pink">Розовый</label>
                 </fieldset>
                 <fieldset class="product-filter-bluetooth filter-block">
                   <legend class="product-filter-title">Bluetooth</legend>
-                  <label class="filter-label">
-                    <input class="catalog-input-radio" type="radio" name="bluetooth" value="yes" checked>
-                    Есть
-                  </label>
-                  <label class="filter-label">
-                    <input type="radio" name="bluetooth" value="no">
-                    Нет
-                  </label>
+
+                  <input class="catalog-input-radio" type="radio" name="bluetooth" value="yes" id="yes" checked>
+                  <label class="filter-label" for="yes">Есть</label>
+
+                  <input class="catalog-input-radio" type="radio" name="bluetooth" value="no" id="no">
+                  <label class="filter-label" for="no">Нет</label>
+
                 </fieldset>
                 <button class="filter-submit-button link-button" type="submit">
                   показать
@@ -205,7 +216,7 @@
                     <a class="catalog-product-cards-link" href="#">
                       <img class="catalog-product-image" src="images/selfie-stick/selfie-stick-1.jpg" alt="Любительская селфи палка.">
                       <div class="catalog-product-description">
-                        <p class="catalog-product-name">Любительская селфи-палка</p>
+                        <p class="catalog-product-name">Любительская<br>селфи-палка</p>
                         <span class="catalog-product-price">500 &#8381;</span>
                       </div>
                       <span class="cards-link-hover">подробнее</span>
@@ -236,7 +247,7 @@
                     <a class="catalog-product-cards-link" href="#">
                       <img class="catalog-product-image" src="images/selfie-stick/selfie-stick-4.jpg" alt="Селфи-палка «Следуй за мной».">
                       <div class="catalog-product-description">
-                        <p class="catalog-product-name">Селфи-палка&nbsp;«Следуй за мной»</p>
+                        <p class="catalog-product-name">Селфи-палка «Следуй за мной»</p>
                         <span class="catalog-product-price">1500 &#8381;</span>
                       </div>
                       <span class="cards-link-hover">подробнее</span>
