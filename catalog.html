@@ -63,7 +63,7 @@
                   <a class="header-control-link" href="#">
                     <span class="basket-number-product">2</span>Корзина
                   </a>
-                  <div class="basket-popover visually-hidden">
+                  <div class="basket-popover basket-popover-close">
                     <div class="basket-pruduct basket-popover-container">
                       <a class="basket-pruduct-link" href="#">
                         <img src="./images/basket/basket-product-1.jpg" width="39" height="43" alt="Любительская селфи палка.">
@@ -144,16 +144,16 @@
                   <div class="range">
                     <div class="range-scale">
                       <div class="range-bar">
-                        <button class="range-toggle toggle-min"></button>
-                        <button class="range-toggle toggle-max"></button>
+                        <button class="range-toggle toggle-min" type="button"></button>
+                        <button class="range-toggle toggle-max" type="button"></button>
                       </div>
                     </div>
                     <div class="range-container-inputs">
-                      <label class="fieldset-range-label" >
-                        <input class="range-input" type="text" value="от 0">
+                      <label class="fieldset-range-label">
+                        от<input class="range-input" type="number" placeholder="1" min="1">
                       </label>
-                      <label class="fieldset-range-label" >
-                        <input class="range-input" type="text" value="до 5000" max="8000">
+                      <label class="fieldset-range-label">
+                        до<input class="range-input" type="number" placeholder="5000" min="1" max="8000">
                       </label>
                     </div>
                   </div>
@@ -263,20 +263,20 @@
                     <button class="pagination-widget-button" type="button">загрузить ещё</button>
                   </div>
                   <div class="pagination-controls">
-                    <a class="pagination-controls-back" href="#">назад</a>
+                    <a class="pagination-controls-back pagination-controls-active" href="#">назад</a>
                     <ul class="pagination-controls-list">
                       <li class="pagination-controls-item">
-                        <a class="pagination-controls-link pagination-link-active" href="#">1</a>
+                        <a class="pagination-link pagination-link-active" href="#">1</a>
                       </li>
                       <li class="pagination-controls-item">
-                        <a class="pagination-controls-link pagination-link-active" href="#">2</a>
+                        <a class="pagination-link" href="#">2</a>
                       </li>
                       <li class="pagination-controls-item">
-                        <a class="pagination-controls-link pagination-link-active" href="#">3</a>
+                        <a class="pagination-link" href="#">3</a>
                       </li>
                       <li class="pagination-controls-item pagination-controls-ellipsis">...</li>
                       <li class="pagination-controls-item">
-                        <a class="pagination-controls-link pagination-link-active" href="#">15</a>
+                        <a class="pagination-link" href="#">15</a>
                       </li>
                     </ul>
                     <a class="pagination-controls-next" href="#">вперёд</a>
@@ -346,7 +346,7 @@
     </footer>
     <!-- /footer -->
     <!-- modal -->
-    <div class="modal-container modal-container-close visually-hidden">
+    <div class="modal-container modal-container-close">
       <div class="modal modal-inner">
         <div class="modal-header">
           <h2 class="modal-heading">Доставка под заказ</h2>
@@ -360,7 +360,7 @@
             </fieldset>
             <fieldset class="fieldset-wrap">
               <label class="fieldset-label" for="e-mail">Ваш e-mail:</label>
-              <input class="fieldset-input-mail" type="e-mail" placeholder="Введите e-mail" name="e-mail" id="e-mail">
+              <input class="fieldset-input-mail" type="e-mail" placeholder="Введите e-mail" name="e-mail" id="e-mail" required>
               <p class="fieldset-input-mail-message">Забавный у вас адрес</p>
             </fieldset>
           </div>

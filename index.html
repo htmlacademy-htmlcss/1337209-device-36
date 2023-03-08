@@ -68,7 +68,7 @@
                 </div>
                 <div class="header-basket">
                   <a class="header-control-link" href="#"><span class="basket-number-product">2</span>Корзина</a>
-                  <div class="basket-popover visually-hidden">
+                  <div class="basket-popover basket-popover-close">
                     <div class="basket-pruduct basket-popover-container">
                       <a class="basket-pruduct-link" href="#">
                         <img src="./images/basket/basket-product-1.jpg" width="39" height="43" alt="Любительская селфи палка.">
@@ -218,7 +218,7 @@
             </button>
           </div>
           <div class="slider-dots">
-            <button class="dots" type="button">
+            <button class="dots dots-active" type="button">
               <span class="visually-hidden">квадрокоптер</span>
             </button>
             <button class="dots" type="button">
@@ -299,8 +299,8 @@
                 <div class="service-description-text">
                   <h2 class="service-description-heading heading">Доставка</h2>
                   <p>
-                    Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-                    совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
+                    Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду
+                    совершенно бесплатно! Ведь<br> мы неплохо заработаем, поднимая его
                     на ваш этаж.
                   </p>
                 </div>
@@ -368,7 +368,7 @@
         <div class="company-contact">
           <div class="company-contact-wrapper">
             <span class="company-line line"></span>
-            <h2 class="company-contact-heading heading">Контакы</h2>
+            <h2 class="company-contact-heading heading">Контакты</h2>
             <p>
               Вы можете забрать товар сами, заехав в наш офис. Заодно сможете
               проверить работоспособность покупки.
@@ -377,7 +377,7 @@
               <h3 class="company-contact-subheading">
                 Интернет-магазин «Девайс»
               </h3>
-              <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+              <p>Санкт-Петербург, набережная реки Карповки 5, литера П.</p>
               <a class="company-contact-tel" href="tel:+7(812)812-12-12">
                 <span class="phone"> +7 (812) 812-12-12</span>
               </a>
@@ -386,7 +386,7 @@
               <h3 class="company-contact-subheading"><b>Время работы</b></h3>
               <span class="time-work-text">пн—пт: с 10:00 до 22:00 <br>сб—вс: с 10:00 до 19:00</span>
             </div>
-            <a class="link-button" href="#">напишите нам</a>
+            <a class="company-contact-link-button link-button" href="#">напишите нам</a>
           </div>
         </div>
       </section>
@@ -472,7 +472,7 @@
     </footer>
     <!-- /footer -->
     <!-- modal -->
-    <div class="modal-container modal-container-close visually-hidden">
+    <div class="modal-container modal-container-close">
       <div class="modal modal-inner">
         <div class="modal-header">
           <h2 class="modal-heading">Доставка под заказ</h2>
@@ -482,11 +482,11 @@
           <div class="fieldset-group">
             <fieldset class="fieldset-wrap">
               <label for="name">Ваше имя</label>
-              <input class="fieldset-input-name" type="text" name="name" id="name" placeholder="Введите имя">
+              <input class="fieldset-input-name" type="text" name="name" id="name" placeholder="Введите имя" required>
             </fieldset>
             <fieldset class="fieldset-wrap">
               <label class="fieldset-label" for="e-mail">Ваш e-mail:</label>
-              <input class="fieldset-input-mail" type="e-mail" placeholder="Введите e-mail" name="e-mail" id="e-mail">
+              <input class="fieldset-input-mail" type="e-mail" placeholder="Введите e-mail" name="e-mail" id="e-mail" required>
               <p class="fieldset-input-mail-message">Забавный у вас адрес</p>
             </fieldset>
           </div>
@@ -495,11 +495,9 @@
               <label for="message">Что нужно привезти:</label>
               <textarea name="message" id="" cols="30" rows="10" id="message" placeholder="В свободной форме"></textarea>
             </fieldset>
-            <fieldset class="fieldset-wrap ">
+            <fieldset class="fieldset-wrap">
               <p>Количество:
-                <span class="tooltip"></span>
-                <span class="tooltip-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
-                к провозу багажа.</span>
+                <button class="tooltip" type="button"></button>
               </p>
               <div class="counter-wrap">
                 <button class="counter-button-minus counter-button" type="button"><img src="./images/modal/modal-counter-minus.svg" alt="Минус один товар."></button>
