@@ -19,8 +19,8 @@
           <div class="header-left">
             <div class="header-search">
               <form class="header-form" action="https://echo.htmlacademy.ru/" method="get">
-                <label class="search-field">
-                  <input type="search" name="search" placeholder="Поиск по сайту">
+                <label class="search-field" for="search-field">
+                  <input type="search" name="search" placeholder="Поиск по сайту" id="search-field">
                 </label>
                 <button class="header-search-button">Найти</button>
               </form>
@@ -31,16 +31,28 @@
               </label>
               <div class="header-drop-catalog">
                 <ul class="header-drop-catalog-list">
-                  <li class="header-drop-catalog-item"><a class="header-drop-catalog-link" href="#">Виртуальная реальность</a></li>
-                  <li class="header-drop-catalog-item"><a class="header-drop-catalog-link" href="catalog.html">Моноподы для селфи</a></li>
-                  <li class="header-drop-catalog-item"><a class="header-drop-catalog-link" href="#">Экшн-камеры</a></li>
+                  <li class="header-drop-catalog-item">
+                    <a class="header-drop-catalog-link" href="#">Виртуальная реальность</a>
+                  </li>
+                  <li class="header-drop-catalog-item">
+                    <a class="header-drop-catalog-link" href="catalog.html">Моноподы для селфи</a>
+                  </li>
+                  <li class="header-drop-catalog-item">
+                    <a class="header-drop-catalog-link" href="#">Экшн-камеры</a>
+                  </li>
                 </ul>
                 <ul class="header-drop-catalog-list">
-                  <li class="header-drop-catalog-item"><a class="header-drop-catalog-link" href="#">Фитнес-браслеты</a></li>
-                  <li class="header-drop-catalog-item"><a class="header-drop-catalog-link" href="#">Умные часы</a></li>
+                  <li class="header-drop-catalog-item">
+                    <a class="header-drop-catalog-link" href="#">Фитнес-браслеты</a>
+                  </li>
+                  <li class="header-drop-catalog-item">
+                    <a class="header-drop-catalog-link" href="#">Умные часы</a>
+                  </li>
                 </ul>
                 <ul class="header-drop-catalog-list">
-                  <li class="header-drop-catalog-item"><a class="header-drop-catalog-link" href="#">Квадрокоптеры</a></li>
+                  <li class="header-drop-catalog-item">
+                    <a class="header-drop-catalog-link" href="#">Квадрокоптеры</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -63,7 +75,7 @@
                         <p>Любительская селфи палка</p>
                       </a>
                       <button class="basket-product-close">
-                        <img src="./images/basket/basket-modal-close.svg" width="10" height="10" alt="Удалить товар из">
+                        <img src="./images/basket/basket-popover-close.svg" width="10" height="10" alt="Удалить товар из">
                         <span class="visually-hidden">Удалить товар</span>
                       </button>
                     </div>
@@ -73,7 +85,7 @@
                         <p>профессиональная селфи палка</p>
                       </a>
                       <button class="basket-product-close">
-                        <img src="./images/basket/basket-modal-close.svg" width="10" height="10" alt="Удалить товар из">
+                        <img src="./images/basket/basket-popover-close.svg" width="10" height="10" alt="Удалить товар из">
                         <span class="visually-hidden">Удалить товар</span>
                       </button>
                     </div>
@@ -93,13 +105,13 @@
               <nav class="header-navigation">
                 <ul class="navigation-list">
                   <li class="navigation-item">
-                    <a class="navigation-link navigation-link-active" href="#service-description">доставка</a>
+                    <a class="navigation-link" href="#service-description">доставка</a>
                   </li>
                   <li class="navigation-item">
-                    <a class="navigation-link navigation-link-active" href="#service-description">гарантия</a>
+                    <a class="navigation-link" href="#">гарантия</a>
                   </li>
                   <li class="navigation-item">
-                    <a class="navigation-link navigation-link-active" href="#">контакты</a>
+                    <a class="navigation-link" href="#">контакты</a>
                   </li>
                 </ul>
               </nav>
@@ -149,7 +161,7 @@
               </div>
               <div class="slider-description">
                 <h2 class="slider-description-heading heading">
-                  Худеем правильно!
+                  Худеем<br>правильно!
                 </h2>
                 <p>
                   Мотивирующие фитнес-браслеты помогут найти в себе силы не
@@ -171,7 +183,7 @@
               </div>
               <div class="slider-description">
                 <h2 class="slider-description-heading heading">
-                  Делай селфи, как Бен Стиллер!
+                  Делай селфи,<br>как Бен Стиллер!
                 </h2>
                 <p>
                   Самая длинная палка для селфи доступна в нашем магазине.
@@ -392,7 +404,7 @@
           <div class="subscription-bottom">
             <form action="https://echo.htmlacademy.ru/">
               <label for="email"></label>
-              <input class="subscription-email-field" id="email" type="email" name="email" placeholder="Ваш e-mail" autocomplete="email" required>
+              <input class="subscription-email-field" id="email" type="email" name="email" placeholder="Ваш e-mail" autocomplete="email">
               <label for="subscription-submit"></label>
               <input class="subscription-button" id="subscription-submit" type="submit" name="submit" value="Подписаться">
             </form>
@@ -464,36 +476,37 @@
       <div class="modal modal-inner">
         <div class="modal-header">
           <h2 class="modal-heading">Доставка под заказ</h2>
-          <button class="modal-close-button" type="reset"><img src="./images/modal/modal-close.svg" alt="закрыть модальное окно."></button>
+          <button class="modal-close-button" type="reset"></button>
         </div>
         <form action="https://echo.htmlacademy.ru/" method="get">
-          <div class="fieldset-personal-info">
-            <div class="fieldset-wrap">
+          <div class="fieldset-group">
+            <fieldset class="fieldset-wrap">
               <label for="name">Ваше имя</label>
-              <input class="fieldset-input-name" type="text" name="name" id="name" placeholder="Введите имя" required>
-            </div>
-            <div class="fieldset-wrap">
-              <label for="e-mail">Ваш e-mail:</label>
-              <input class="fieldset-input-mail" type="e-mail" name="e-mail" id="e-mail" required>
-            </div>
+              <input class="fieldset-input-name" type="text" name="name" id="name" placeholder="Введите имя">
+            </fieldset>
+            <fieldset class="fieldset-wrap">
+              <label class="fieldset-label" for="e-mail">Ваш e-mail:</label>
+              <input class="fieldset-input-mail" type="e-mail" placeholder="Введите e-mail" name="e-mail" id="e-mail">
+              <p class="fieldset-input-mail-message">Забавный у вас адрес</p>
+            </fieldset>
           </div>
-          <div class="fieldset-delivery-info">
-            <div class="fieldset-wrap">
+          <div class="fieldset-group">
+            <fieldset class="fieldset-wrap">
               <label for="message">Что нужно привезти:</label>
               <textarea name="message" id="" cols="30" rows="10" id="message" placeholder="В свободной форме"></textarea>
-            </div>
-            <div class="fieldset-wrap ">
+            </fieldset>
+            <fieldset class="fieldset-wrap ">
               <p>Количество:
                 <span class="tooltip"></span>
                 <span class="tooltip-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
                 к провозу багажа.</span>
               </p>
               <div class="counter-wrap">
-                <button class="counter-button-minus" type="button"><img src="./images/modal/modal-counter-minus.svg" alt="минус один товар"></button>
-                <input class="counter-screen" type="number" name="result" id="counter-screen" value="1" required>
-                <button class="counter-button-plus" type="button"><img src="./images/modal/modal-counter-plus.svg" alt="плюс один товар"></button>
+                <button class="counter-button-minus counter-button" type="button"><img src="./images/modal/modal-counter-minus.svg" alt="Минус один товар."></button>
+                <input class="counter-screen" type="number" name="counter" id="counter-result" value="0" required>
+                <button class="counter-button-plus counter-button" type="button"><img src="./images/modal/modal-counter-plus.svg" alt="Плюс один товар."></button>
               </div>
-            </div>
+            </fieldset>
           </div>
           <button class="link-button" type="submit">отправить</button>
         </form>

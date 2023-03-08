@@ -99,13 +99,13 @@
               <nav class="header-navigation">
                 <ul class="navigation-list">
                   <li class="navigation-item">
-                    <a class="navigation-link navigation-link-active" href="#">доставка</a>
+                    <a class="navigation-link" href="#">доставка</a>
                   </li>
                   <li class="navigation-item">
-                    <a class="navigation-link navigation-link-active" href="#">гарантия</a>
+                    <a class="navigation-link" href="#">гарантия</a>
                   </li>
                   <li class="navigation-item">
-                    <a class="navigation-link navigation-link-active" href="#">контакты</a>
+                    <a class="navigation-link" href="#">контакты</a>
                   </li>
                 </ul>
               </nav>
@@ -115,6 +115,7 @@
       </div>
     </header>
     <!-- /header -->
+    <div class="empty-block container"></div>
     <!-- main -->
     <main class="main main-container">
       <div class="main-container">
@@ -148,11 +149,11 @@
                       </div>
                     </div>
                     <div class="range-container-inputs">
-                      <label class="fieldset-range-label" >от
-                        <input class="range-input" type="number" value="0">
+                      <label class="fieldset-range-label" >
+                        <input class="range-input" type="text" value="от 0">
                       </label>
-                      <label class="fieldset-range-label" >до
-                        <input class="range-input" type="number" value="5000" max="8000">
+                      <label class="fieldset-range-label" >
+                        <input class="range-input" type="text" value="до 5000" max="8000">
                       </label>
                     </div>
                   </div>
@@ -215,17 +216,18 @@
                   <li class="catalog-product-cards-item">
                     <a class="catalog-product-cards-link" href="#">
                       <img class="catalog-product-image" src="images/selfie-stick/selfie-stick-1.jpg" alt="Любительская селфи палка.">
+                      <img class="catalog-product-new visually-hidden" src="./images/selfie-stick/cards-new-icon.svg" alt="Новинка.">
                       <div class="catalog-product-description">
                         <p class="catalog-product-name">Любительская<br>селфи-палка</p>
                         <span class="catalog-product-price">500 &#8381;</span>
                       </div>
                       <span class="cards-link-hover">подробнее</span>
                     </a>
-
                   </li>
                   <li class="catalog-product-cards-item">
                     <a class="catalog-product-cards-link" href="#">
                       <img class="catalog-product-image" src="images/selfie-stick/selfie-stick-2.jpg" alt="Профессиональная селфи-палка.">
+                      <img class="catalog-product-new visually-hidden" src="./images/selfie-stick/cards-new-icon.svg" alt="Новинка.">
                       <div class="catalog-product-description">
                         <p class="catalog-product-name">Профессиональная селфи-палка</p>
                         <span class="catalog-product-price">1500 &#8381;</span>
@@ -236,6 +238,7 @@
                   <li class="catalog-product-cards-item">
                     <a class="catalog-product-cards-link" href="#">
                       <img class="catalog-product-image" src="images/selfie-stick/selfie-stick-3.jpg" alt="Непотопляемая селфи-палка.">
+                      <img class="catalog-product-new visually-hidden" src="./images/selfie-stick/cards-new-icon.svg" alt="Новинка.">
                       <div class="catalog-product-description">
                         <p class="catalog-product-name">Непотопляемая селфи-палка</p>
                         <span class="catalog-product-price">2500 &#8381;</span>
@@ -246,6 +249,7 @@
                   <li class="catalog-product-cards-item">
                     <a class="catalog-product-cards-link" href="#">
                       <img class="catalog-product-image" src="images/selfie-stick/selfie-stick-4.jpg" alt="Селфи-палка «Следуй за мной».">
+                      <img class="catalog-product-new visually-hidden" src="./images/selfie-stick/cards-new-icon.svg" alt="Новинка.">
                       <div class="catalog-product-description">
                         <p class="catalog-product-name">Селфи-палка «Следуй за мной»</p>
                         <span class="catalog-product-price">1500 &#8381;</span>
@@ -256,9 +260,7 @@
                 </ul>
                 <div class="pagination-container">
                   <div class="pagination-widget">
-                    <button class="pagination-widget-button" type="button">
-                      <span class="pagination-button-label">загрузить ещё</span>
-                    </button>
+                    <button class="pagination-widget-button" type="button">загрузить ещё</button>
                   </div>
                   <div class="pagination-controls">
                     <a class="pagination-controls-back" href="#">назад</a>
@@ -351,22 +353,23 @@
           <button class="modal-close-button" type="reset"><img src="./images/modal/modal-close.svg" alt="закрыть окно."></button>
         </div>
         <form action="https://echo.htmlacademy.ru/" method="get">
-          <div class="fieldset-personal-info">
-            <div class="fieldset-wrap">
+          <div class="fieldset-group">
+            <fieldset class="fieldset-wrap">
               <label for="name">Ваше имя</label>
               <input class="fieldset-input-name" type="text" name="name" id="name" placeholder="Введите имя" required>
-            </div>
-            <div class="fieldset-wrap">
-              <label for="e-mail">Ваш e-mail:</label>
-              <input class="fieldset-input-mail" type="e-mail" name="e-mail" id="e-mail" required>
-            </div>
+            </fieldset>
+            <fieldset class="fieldset-wrap">
+              <label class="fieldset-label" for="e-mail">Ваш e-mail:</label>
+              <input class="fieldset-input-mail" type="e-mail" placeholder="Введите e-mail" name="e-mail" id="e-mail">
+              <p class="fieldset-input-mail-message">Забавный у вас адрес</p>
+            </fieldset>
           </div>
-          <div class="fieldset-delivery-info">
-            <div class="fieldset-wrap">
+          <div class="fieldset-group">
+            <fieldset class="fieldset-wrap">
               <label for="message">Что нужно привезти:</label>
               <textarea name="message" id="" cols="30" rows="10" id="message" placeholder="В свободной форме"></textarea>
-            </div>
-            <div class="fieldset-wrap ">
+            </fieldset>
+            <fieldset class="fieldset-wrap ">
               <p>Количество:
                 <span class="tooltip"></span>
                 <span class="tooltip-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
@@ -377,7 +380,7 @@
                 <input class="counter-screen" type="number" name="result" id="counter-screen" value="1" required>
                 <button class="counter-button-plus" type="button"><img src="./images/modal/modal-counter-plus.svg" alt="плюс один товар"></button>
               </div>
-            </div>
+            </fieldset>
           </div>
           <button class="link-button" type="submit">отправить</button>
         </form>
