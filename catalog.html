@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин Девайс</title>
+    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -11,7 +12,7 @@
       <div class="header-container header-catalog container">
         <div class="header-logo">
           <a class="header-logo-link" href="index.html">
-            <img src="./images/logo.svg" width="145" height="36" alt="Логотип.">
+            <img src="./images/header/header-logo.svg" width="145" height="36" alt="Логотип.">
             <span class="visually-hidden">Логотип сайта, переход на главную страницу.</span>
           </a>
         </div>
@@ -31,16 +32,28 @@
               </label>
               <div class="header-drop-catalog">
                 <ul class="header-drop-catalog-list">
-                  <li class="header-drop-catalog-item"><a class="header-drop-catalog-link" href="#">Виртуальная реальность</a></li>
-                  <li class="header-drop-catalog-item"><a class="header-drop-catalog-link" href="catalog.html">Моноподы для селфи</a></li>
-                  <li class="header-drop-catalog-item"><a class="header-drop-catalog-link" href="#">Экшн-камеры</a></li>
+                  <li class="header-drop-catalog-item">
+                    <a class="header-drop-catalog-link" href="#">Виртуальная реальность</a>
+                  </li>
+                  <li class="header-drop-catalog-item">
+                    <a class="header-drop-catalog-link">Моноподы для селфи</a>
+                  </li>
+                  <li class="header-drop-catalog-item">
+                    <a class="header-drop-catalog-link" href="#">Экшн-камеры</a>
+                  </li>
                 </ul>
                 <ul class="header-drop-catalog-list">
-                  <li class="header-drop-catalog-item"><a class="header-drop-catalog-link" href="#">Фитнес-браслеты</a></li>
-                  <li class="header-drop-catalog-item"><a class="header-drop-catalog-link" href="#">Умные часы</a></li>
+                  <li class="header-drop-catalog-item">
+                    <a class="header-drop-catalog-link" href="#">Фитнес-браслеты</a>
+                  </li>
+                  <li class="header-drop-catalog-item">
+                    <a class="header-drop-catalog-link" href="#">Умные часы</a>
+                  </li>
                 </ul>
                 <ul class="header-drop-catalog-list">
-                  <li class="header-drop-catalog-item"><a class="header-drop-catalog-link" href="#">Квадрокоптеры</a></li>
+                  <li class="header-drop-catalog-item">
+                    <a class="header-drop-catalog-link" href="#">Квадрокоптеры</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -48,15 +61,14 @@
           <div class="header-right">
             <div class="header-top">
               <div class="header-user-menu">
-                <a class="header-control-link" href="#"><span class="header-user-menu-icon"></span>
+                <a class="header-control-link" href="#">
                   Коля Петухов
                 </a>
-                <a class="header-control-link header-control-link-exit" href="#">Выйти</a>
+                <a class="header-user-menu-close" href="#">Выйти</a>
               </div>
               <div class="header-control-menu">
                 <div class="header-compare">
-                  <a class="header-control-link" href="#">
-                    <span class="header-compare-icon"></span>Сравнить
+                  <a class="header-control-link" href="#">Сравнить
                   </a>
                 </div>
                 <div class="header-basket">
@@ -70,7 +82,6 @@
                         <p>Любительская селфи палка</p>
                       </a>
                       <button class="basket-product-close">
-                        <img src="./images/basket/basket-modal-close.svg" width="10" height="10" alt="Удалить товар из">
                         <span class="visually-hidden">Удалить товар</span>
                       </button>
                     </div>
@@ -80,7 +91,6 @@
                         <p>профессиональная селфи палка</p>
                       </a>
                       <button class="basket-product-close">
-                        <img src="./images/basket/basket-modal-close.svg" width="10" height="10" alt="Удалить товар из">
                         <span class="visually-hidden">Удалить товар</span>
                       </button>
                     </div>
@@ -115,21 +125,22 @@
       </div>
     </header>
     <!-- /header -->
+    <!-- empty-block -->
     <div class="empty-block container"></div>
     <!-- main -->
     <main class="main main-container">
       <div class="main-container">
         <div class="breadcrumbs container">
           <h1 class="main-title">Моноподы для селфи</h1>
-          <ul class="breadcrumbs-list row-flex">
+          <ul class="breadcrumbs-list">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html"> Главная </a>
+              <a class="breadcrumbs-link" href="index.html">Главная</a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="#"> Каталог товаров </a>
+              <a class="breadcrumbs-link" href="#">Каталог товаров</a>
             </li>
             <li class="breadcrumbs-item breadcrumbs-item-last">
-              <a class="breadcrumbs-link-last"> Моноподы </a>
+              <a class="breadcrumbs-link-last">Моноподы</a>
             </li>
           </ul>
         </div>
@@ -178,10 +189,10 @@
                 <fieldset class="product-filter-bluetooth filter-block">
                   <legend class="product-filter-title">Bluetooth</legend>
 
-                  <input class="catalog-input-radio" type="radio" name="bluetooth" value="yes" id="yes" checked>
+                  <input class="catalog-input-radio" type="radio" name="bluetooth" id="yes" value="yes" checked>
                   <label class="filter-label" for="yes">Есть</label>
 
-                  <input class="catalog-input-radio" type="radio" name="bluetooth" value="no" id="no">
+                  <input class="catalog-input-radio" type="radio" name="bluetooth" id="no" value="no">
                   <label class="filter-label" for="no">Нет</label>
 
                 </fieldset>
@@ -194,7 +205,7 @@
               <div class="catalog-product-top">
                 <h2 class="sorting-heading">Сортировка:</h2>
                 <label>
-                  <select class="catalog-product-sorting" id="sorting">
+                  <select class="catalog-product-sorting" name="sorting">
                     <option class="catatlog-product-classification" value="popular" selected>Популярные</option>
                     <option class="catatlog-product-classification" value="inexpensive">Недорогие</option>
                     <option class="catatlog-product-classification" value="discussed">Обсуждаемые</option>
@@ -202,11 +213,15 @@
                 </label>
                 <div class="catalog-product-top-arrow">
                   <button type="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" fill="none"><path fill="#000" d="m5.5 0 5 10H.5"/></svg>
+                    <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#000" d="m5.5 0 5 10H.5"/>
+                    </svg>
                     <span class="arrow-up visually-hidden">вверх</span>
                   </button>
                   <button type="button">
-                    <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10 .5 0h10" fill="#000"/></svg>
+                    <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.5 10 .5 0h10" fill="#000"/>
+                    </svg>
                     <span class="arrow-down visually-hidden">вниз</span>
                   </button>
                 </div>
@@ -215,7 +230,7 @@
                 <ul class="catalog-product-cards-list">
                   <li class="catalog-product-cards-item">
                     <a class="catalog-product-cards-link" href="#">
-                      <img class="catalog-product-image" src="images/selfie-stick/selfie-stick-1.jpg" alt="Любительская селфи палка.">
+                      <img class="catalog-product-image" src="images/catalog-product-cards/selfie-stick-1.jpg" width="360" height="380" alt="Любительская селфи палка.">
                       <div class="catalog-product-description">
                         <p class="catalog-product-name">Любительская<br>селфи-палка</p>
                         <span class="catalog-product-price">500 &#8381;</span>
@@ -223,35 +238,32 @@
                       <span class="cards-link-hover">подробнее</span>
                     </a>
                   </li>
-                  <li class="catalog-product-cards-item">
+                  <li class="catalog-product-cards-item ">
                     <a class="catalog-product-cards-link" href="#">
-                      <img class="catalog-product-image" src="images/selfie-stick/selfie-stick-2.jpg" alt="Профессиональная селфи-палка.">
-                      <img class="catalog-product-new visually-hidden" src="./images/selfie-stick/cards-new-icon.svg" alt="Новинка.">
+                      <img class="catalog-product-image" src="images/catalog-product-cards/selfie-stick-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка.">
                       <div class="catalog-product-description">
                         <p class="catalog-product-name">Профессиональная селфи-палка</p>
-                        <span class="catalog-product-price">1500 &#8381;</span>
+                        <span class="catalog-product-price">1 500 &#8381;</span>
                       </div>
                       <span class="cards-link-hover">подробнее</span>
                     </a>
                   </li>
                   <li class="catalog-product-cards-item">
                     <a class="catalog-product-cards-link" href="#">
-                      <img class="catalog-product-image" src="images/selfie-stick/selfie-stick-3.jpg" alt="Непотопляемая селфи-палка.">
-                      <img class="catalog-product-new visually-hidden" src="./images/selfie-stick/cards-new-icon.svg" alt="Новинка.">
+                      <img class="catalog-product-image" src="images/catalog-product-cards/selfie-stick-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка.">
                       <div class="catalog-product-description">
                         <p class="catalog-product-name">Непотопляемая селфи-палка</p>
-                        <span class="catalog-product-price">2500 &#8381;</span>
+                        <span class="catalog-product-price">2 500 &#8381;</span>
                       </div>
                       <span class="cards-link-hover">подробнее</span>
                     </a>
                   </li>
                   <li class="catalog-product-cards-item">
                     <a class="catalog-product-cards-link" href="#">
-                      <img class="catalog-product-image" src="images/selfie-stick/selfie-stick-4.jpg" alt="Селфи-палка «Следуй за мной».">
-                      <img class="catalog-product-new visually-hidden" src="./images/selfie-stick/cards-new-icon.svg" alt="Новинка.">
+                      <img class="catalog-product-image" src="images/catalog-product-cards/selfie-stick-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной».">
                       <div class="catalog-product-description">
                         <p class="catalog-product-name">Селфи-палка «Следуй за мной»</p>
-                        <span class="catalog-product-price">1500 &#8381;</span>
+                        <span class="catalog-product-price">1 500 &#8381;</span>
                       </div>
                       <span class="cards-link-hover">подробнее</span>
                     </a>
@@ -261,24 +273,24 @@
                   <div class="pagination-widget">
                     <button class="pagination-widget-button" type="button">загрузить ещё</button>
                   </div>
-                  <div class="pagination-controls">
-                    <a class="pagination-controls-back pagination-controls-active" href="#">назад</a>
-                    <ul class="pagination-controls-list">
-                      <li class="pagination-controls-item">
+                  <div class="pagination-control">
+                    <a class="pagination-control-back pagination-control-active" href="#">назад</a>
+                    <ul class="pagination-control-list">
+                      <li class="pagination-control-item">
                         <a class="pagination-link pagination-link-active" href="#">1</a>
                       </li>
-                      <li class="pagination-controls-item">
+                      <li class="pagination-control-item">
                         <a class="pagination-link" href="#">2</a>
                       </li>
-                      <li class="pagination-controls-item">
+                      <li class="pagination-control-item">
                         <a class="pagination-link" href="#">3</a>
                       </li>
-                      <li class="pagination-controls-item pagination-controls-ellipsis">...</li>
-                      <li class="pagination-controls-item">
+                      <li class="pagination-control-item pagination-control-ellipsis">...</li>
+                      <li class="pagination-control-item">
                         <a class="pagination-link" href="#">15</a>
                       </li>
                     </ul>
-                    <a class="pagination-controls-next" href="#">вперёд</a>
+                    <a class="pagination-control-next" href="#">вперёд</a>
                   </div>
                 </div>
               </div>
@@ -292,7 +304,7 @@
     <footer class="footer">
       <div class="footer-container container">
           <a class="footer-logo-link" href="index.html">
-            <img src="./images/footer-logo.svg" width="145" height="36" alt="Логотип.">
+            <img src="./images/footer/footer-logo.svg" width="145" height="36" alt="Логотип.">
             <span class="visually-hidden">Логотип,переход на главную страницу.</span>
           </a>
           <div class="footer-body">
@@ -316,17 +328,17 @@
             </ul>
             <ul class="footer-social-list">
               <li class="footer-social-item">
-                <a class="footer-social-icons-link footer-icons-telegram" href="#">
+                <a class="footer-social-icons-link footer-icons-telegram" href="https://telegram.org/">
                   <span class="visually-hidden">Telegram</span>
                 </a>
               </li>
               <li class="footer-social-item">
-                <a class="footer-social-icons-link footer-icons-youtube" href="#">
+                <a class="footer-social-icons-link footer-icons-youtube" href="https://www.youtube.com/">
                   <span class="visually-hidden">Youtube</span>
                 </a>
               </li>
               <li class="footer-social-item">
-                <a class="footer-social-icons-link footer-icons-twitter" href="#">
+                <a class="footer-social-icons-link footer-icons-twitter" href="https://twitter.com/">
                   <span class="visually-hidden">Twitter</span>
                 </a>
               </li>
@@ -337,7 +349,9 @@
               <span class="phone">Тел.: +7 (812) 812-12-12</span>
             </a>
             <a class="footer-logo-htmlacademy" href="https://htmlacademy.ru/study">
-              <svg xmlns="http://www.w3.org/2000/svg" width="115" height="33" fill="#ffe17f"><path fill="currentColor" d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9ZM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2ZM41.1 4.6c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 12.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM28.9 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1-3.4 0-5.6 2.5-5.6 5.6 0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1c-.4 1.3-1.7 2.3-3.3 2.3-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1V22ZM55.1 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 19.8c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 17.9c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 17.9c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"/></svg>
+              <svg width="115" height="33" fill="#ffe17f" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor" d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9ZM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2ZM41.1 4.6c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 12.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM28.9 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1-3.4 0-5.6 2.5-5.6 5.6 0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1c-.4 1.3-1.7 2.3-3.3 2.3-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1V22ZM55.1 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 19.8c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 17.9c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 17.9c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"/>
+              </svg>
             </a>
           </div>
         </div>
@@ -349,35 +363,38 @@
       <div class="modal modal-inner">
         <div class="modal-header">
           <h2 class="modal-heading">Доставка под заказ</h2>
-          <button class="modal-close-button" type="reset"><img src="./images/modal/modal-close.svg" alt="закрыть окно."></button>
+          <button class="modal-close-button" type="reset"></button>
         </div>
         <form action="https://echo.htmlacademy.ru/" method="get">
           <div class="fieldset-group">
             <fieldset class="fieldset-wrap">
               <label for="name">Ваше имя</label>
               <input class="fieldset-input-name" type="text" name="name" id="name" placeholder="Введите имя" required>
+              <p class="fieldset-input-name-message">Добавьте имя</p>
             </fieldset>
             <fieldset class="fieldset-wrap">
               <label class="fieldset-label" for="e-mail">Ваш e-mail:</label>
-              <input class="fieldset-input-mail" type="e-mail" placeholder="Введите e-mail" name="e-mail" id="e-mail" required>
+              <input class="fieldset-input-mail" type="email" name="email" id="e-mail" placeholder="Введите e-mail" required>
               <p class="fieldset-input-mail-message">Забавный у вас адрес</p>
             </fieldset>
           </div>
           <div class="fieldset-group">
             <fieldset class="fieldset-wrap">
               <label for="message">Что нужно привезти:</label>
-              <textarea name="message" id="" cols="30" rows="10" id="message" placeholder="В свободной форме"></textarea>
+              <textarea name="message" cols="30" rows="10" id="message" placeholder="В свободной форме."></textarea>
             </fieldset>
             <fieldset class="fieldset-wrap ">
               <p>Количество:
-                <span class="tooltip"></span>
-                <span class="tooltip-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
-                к провозу багажа.</span>
+                <button class="tooltip"></button>
               </p>
               <div class="counter-wrap">
-                <button class="counter-button-minus" type="button"><img src="./images/modal/modal-counter-minus.svg" alt="минус один товар"></button>
+                <button class="counter-button-minus counter-button" type="button">
+                  <img src="./images/modal/modal-counter-minus.svg" alt="минус один товар.">
+                </button>
                 <input class="counter-screen" type="number" name="result" id="counter-screen" value="1" required>
-                <button class="counter-button-plus" type="button"><img src="./images/modal/modal-counter-plus.svg" alt="плюс один товар"></button>
+                <button class="counter-button-plus counter-button" type="button">
+                  <img src="./images/modal/modal-counter-plus.svg" alt="плюс один товар.">
+                </button>
               </div>
             </fieldset>
           </div>
