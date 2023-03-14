@@ -6,7 +6,6 @@
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-
   <body>
     <!-- header -->
     <header class="header">
@@ -304,15 +303,15 @@
         <div class="service-container container">
           <h2 class="visually-hidden">Клиентский сервис</h2>
           <div class="service-description" id="service-description">
-            <input class="delivery" type="radio" name="tabs" id="service-delivery" checked>
+            <input class="delivery visually-hidden" type="radio" name="tabs" id="service-delivery" checked>
             <label class="service-label" for="service-delivery">
               <span>Доставка</span>
             </label>
-            <input class="warrenty" type="radio" name="tabs" id="service-warrenty">
+            <input class="warrenty visually-hidden" type="radio" name="tabs" id="service-warrenty">
             <label class="service-label" for="service-warrenty">
               <span>Гарантия</span>
             </label>
-            <input class="credit" type="radio" name="tabs" id="service-credit">
+            <input class="credit visually-hidden" type="radio" name="tabs" id="service-credit">
             <label class="service-label" for="service-credit">
               <span>Кредит</span>
             </label>
@@ -345,8 +344,7 @@
               <div class="service-description-wrap">
                 <div class="service-description-text">
                   <h2 class="service-description-heading heading">Кредит</h2>
-                  <p>
-                    Залезть в долговую яму стало проще! Кредитные консультанты
+                  <p>Залезть в долговую яму стало проще! Кредитные консультанты
                     подберут для вас наиболее выгодные условия кредита. Выгодные для
                     банка, разумеется.
                   </p>
@@ -367,14 +365,8 @@
         <div class="company-about">
           <span class="company-line line"></span>
           <h2 class="company-about-heading heading">О нас</h2>
-          <p>
-            Огромный выбор гаджетов не оставит равнодушным гика, который есть в
-            каждом из нас.
-          </p>
-          <p>
-            Мы можем доставить ваш товар в самые отдалённые уголки России
-            транспортными компаниями:
-          </p>
+          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
           <ul class="company-list">
             <li class="company-item">Меловые линии</li>
             <li class="company-item">СДИК</li>
@@ -392,9 +384,7 @@
               проверить работоспособность покупки.
             </p>
             <div class="company-contact-adress">
-              <h3 class="company-contact-subheading">
-                Интернет-магазин «Девайс»
-              </h3>
+              <h3 class="company-contact-subheading">Интернет-магазин «Девайс»</h3>
               <p>Санкт-Петербург, набережная реки Карповки 5, литера П.</p>
               <a class="company-contact-tel" href="tel:+7(812)812-12-12">
                 <span class="phone"> +7 (812) 812-12-12</span>
@@ -423,8 +413,8 @@
           </div>
           <div class="subscription-bottom">
             <form action="https://echo.htmlacademy.ru/">
-              <label for="email"></label>
-              <input class="subscription-email-field" type="email" name="email"  id="email" placeholder="Ваш e-mail" autocomplete="email">
+              <label for="subscription-email"></label>
+              <input class="subscription-email-field" type="email" name="email"  id="subscription-email" placeholder="Ваш e-mail" autocomplete="email">
               <label for="subscription-submit"></label>
               <input class="subscription-button" type="submit" name="submit" id="subscription-submit" value="Подписаться">
             </form>
@@ -445,7 +435,7 @@
           <div class="footer-body">
           <div class="footer-left">
             <p class="footer-adress">
-              Санкт-Петербург, набережная реки Карповки , 5, литера П.
+              Санкт-Петербург, набережная реки Карповки, 5, литера П.
             </p>
             <span class="footer-line line"></span>
           </div>
@@ -508,8 +498,8 @@
               <p class="fieldset-input-name-message">Добавьте имя</p>
             </fieldset>
             <fieldset class="fieldset-wrap">
-              <label class="fieldset-label" for="e-mail">Ваш e-mail:</label>
-              <input class="fieldset-input-mail" type="email" name="email" id="e-mail" placeholder="почта" required>
+              <label class="fieldset-label" for="modal-email">Ваш e-mail:</label>
+              <input class="fieldset-input-mail" type="email" name="email" id="modal-email" placeholder="почта" required>
               <p class="fieldset-input-mail-message">Забавный у вас адрес</p>
             </fieldset>
           </div>

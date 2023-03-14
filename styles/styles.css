@@ -1,7 +1,6 @@
   @font-face {
     font-family: "Rubik";
     font-style: normal;
-    font-size: 18px;
     font-weight: 400;
     font-display: swap;
 
@@ -11,7 +10,6 @@
   @font-face {
     font-family: "Rubik";
     font-style: normal;
-    font-size: 18px;
     font-weight: 700;
     font-display: swap;
 
@@ -21,7 +19,6 @@
   @font-face {
     font-family: "Raleway";
     font-style: normal;
-    font-size: 18px;
     font-weight: 800;
     font-display: swap;
 
@@ -262,7 +259,7 @@
   }
 
   .header-drop-catalog-item:not(.header-drop-catalog-item:nth-last-child(1)) {
-    margin-bottom: 22px;
+    margin-bottom: 15px;
   }
 
   .header-catalog-checkbox:checked ~ .header-drop-catalog {
@@ -822,6 +819,7 @@
 
   .navigation-link-active {
     position: relative;
+    z-index: 2;
   }
 
   .navigation-link-active::before {
@@ -842,6 +840,7 @@
 
   .navigation-link:focus-visible {
     outline: 2px solid #af4fff;
+
   }
 
   .navigation-link:active {
@@ -1929,10 +1928,6 @@
     position: relative;
 
     padding-top: 64px;
-  }
-
-  .service-description input {
-    display: none;
   }
 
   .service-label {
