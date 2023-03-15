@@ -262,7 +262,8 @@
     margin-bottom: 15px;
   }
 
-  .header-catalog-checkbox:checked ~ .header-drop-catalog {
+  .header-catalog-checkbox:checked ~ .header-drop-catalog,
+  .header-catalog-checkbox:focus-visible ~ .header-drop-catalog {
     visibility: inherit;
   }
 
@@ -573,6 +574,7 @@
     position: relative;
 
     display: flex;
+    max-width: 240px;
   }
 
   .header-control-link {
@@ -616,7 +618,11 @@
     height: 14px;
     margin: auto;
 
-    background-image: url('../images/header-icon/basket-icon.svg');
+    background-image: url("../images/header-icon/basket-icon.svg");
+  }
+
+  .header-basket .header-control-link:focus + .basket-popover-close {
+    display: block;
   }
 
   .basket-number-product {
@@ -635,6 +641,7 @@
     background-color: #ffffff;
     border-radius: 50%;
   }
+
 
   /* basket-popover */
 
@@ -693,6 +700,8 @@
     text-decoration: none;
     color: #ffffff;
   }
+
+
 
   .basket-pruduct-link:hover {
     opacity: 0.6;
@@ -1034,6 +1043,7 @@
   .slider-dots {
     position: relative;
     top: -14px;
+    z-index: 1;
 
     display: flex;
     justify-content: center;
@@ -1501,6 +1511,7 @@
   }
 
   .sorting-heading {
+    max-width: 200px;
     margin: 0;
     padding: 5px 0;
 
@@ -1513,6 +1524,7 @@
   }
 
   .catalog-product-sorting {
+    max-width: 141px;
     font-size: 18px;
 
     background-color: transparent;
@@ -1742,6 +1754,7 @@
   .catalog-product-price {
     line-height: 21px;
     font-weight: 400;
+    text-align: right;
     color: #444444;
   }
 
@@ -1768,7 +1781,7 @@
 
   .pagination-widget-button {
     width: 100%;
-    padding: 15px 0;
+    padding: 15px;
 
     font-family: "Raleway", sans-serif;
     font-size: 16px;
@@ -2183,7 +2196,8 @@
   }
 
   .company-about {
-    width: 497px;
+    max-width: 497px;
+    width: 100%;
   }
 
   .company-about-heading {
@@ -2192,7 +2206,8 @@
 
   .company-contact {
     box-sizing: border-box;
-    width: 532px;
+    max-width: 532px;
+    width: 100%;
     padding-right: 19px;
     margin-left: auto;
   }
@@ -2413,6 +2428,7 @@
   /* footer-left */
 
   .footer-left {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -2420,6 +2436,18 @@
     margin-right: auto;
 
     font-size: 16px;
+  }
+
+  .footer-left::before {
+    content: "";
+
+    position: absolute;
+    bottom: 16px;
+
+    width: 80px;
+    height: 7px;
+
+    background-color: #ffc700;
   }
 
   .footer-left p {
@@ -2430,12 +2458,6 @@
     width: 240px;
 
     line-height: 20px;
-  }
-
-  .footer-line {
-    margin-bottom: 16px;
-
-    background-color: #ffc700;
   }
 
   .line {
@@ -2450,6 +2472,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 52px;
   }
 
   .footer-social-list,
@@ -2464,7 +2487,6 @@
     gap: 15px;
     width: 150px;
     padding: 0;
-    padding-top: 30px;
     margin: 0;
   }
 
@@ -2472,7 +2494,7 @@
     display: flex;
     justify-content: start;
     flex-wrap: wrap;
-    max-width: 450px;
+    max-width: 500px;
     padding: 0;
     padding-top: 4px;
     margin: 0;
@@ -2485,6 +2507,7 @@
   }
 
   .footer-info-item {
+    max-width: 130px;
     padding-bottom: 10px;
   }
 
@@ -2698,6 +2721,7 @@
   }
 
   .modal-heading {
+    max-width: 730px;
     margin: 0;
 
     font-family: "Raleway", sans-serif;
@@ -2706,9 +2730,11 @@
   }
 
   .modal-close-button {
+    align-self: flex-start;
     width: 26px;
     height: 26px;
     padding: 0;
+    margin-top: 12px;
 
     background-color: transparent;
     background-image: url("../images/modal/modal-close.svg");
@@ -2729,32 +2755,44 @@
     outline-offset: 2px;
   }
 
+  /* modal filedset-group */
+
   .fieldset-group {
     display: flex;
     justify-content: space-between;
     margin-bottom: 42px;
   }
 
-  .fieldset-group fieldset {
-    position: relative;
+  .fieldset-group:first-child .fieldset-wrap {
+    max-width: 360px;
+    width: 100%;
+  }
 
+  .fieldset-group input {
+    width: 360px;
+
+    font-family: "Rubik", serif;
+  }
+
+  .fieldset-group:last-of-type {
+    margin-bottom: 35px;
+  }
+
+  .fieldset-group fieldset {
     padding: 0;
     margin: 0;
 
     border: none;
   }
 
-  .fieldset-group input {
-    width: 360px;
-  }
-
-  .fieldset-wrap input:focus-visible {
+  .fieldset-group input:focus-visible {
     outline: 2px solid #af4fff;
   }
 
   .fieldset-input-mail {
-    font-size: 16px;
     padding-left: 20px;
+
+    font-size: 16px;
   }
 
   .fieldset-wrap .fieldset-input-name-message {
@@ -2788,15 +2826,19 @@
     border: 1px solid #ff3d3d;
   }
 
-  .fieldset-group:nth-child(1) fieldset::before {
+  .fieldset-group:nth-child(1) label {
+    position: relative;
+  }
+
+  .fieldset-group:nth-child(1) label:before {
     content: "";
 
     position: absolute;
-    right: 24px;
-    top: 58px;
+    right: 22px;
+    bottom: -50px;
   }
 
-  .fieldset-group:nth-child(1) fieldset:first-child::before {
+  .fieldset-group:nth-child(1) .fieldset-label-name::before {
     width: 13px;
     height: 12px;
 
@@ -2804,7 +2846,7 @@
     background-repeat: no-repeat;
   }
 
-  .fieldset-group:nth-child(1) fieldset:last-child::before {
+  .fieldset-group:nth-child(1) .fieldset-label-mail::before {
     width: 15px;
     height: 12px;
 
@@ -2818,13 +2860,12 @@
     font-size: 18px;
     line-height: 20px;
     font-weight: 700;
+    letter-spacing: -0.02em;
 
     margin-bottom: 14px;
   }
 
   .fieldset-wrap p {
-    position: relative;
-
     margin: 0;
     margin-bottom: 14px;
 
@@ -2849,14 +2890,33 @@
 
   .fieldset-wrap input {
     padding-right: 50px;
+    padding-left: 20px;
+  }
+
+  .fieldset-group:last-of-type fieldset:first-child {
+    max-width: 540px;
+    width: 100%;
   }
 
   .fieldset-wrap textarea {
     width: 540px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0 20px 20px;
+
+    font-family: "Rubik", sans-serif;
 
     resize: none;
+  }
+
+  .fieldset-group:last-of-type .fieldset-wrap:last-of-type {
+    max-width: 180px;
+  }
+
+  .counter-text {
+    position: relative;
+  }
+
+  .counter-text p {
+    max-width: 112px;
   }
 
   .fieldset-wrap textarea:focus-visible {
@@ -2879,6 +2939,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
+    right: 34px;
 
     width: 26px;
     height: 26px;
