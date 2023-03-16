@@ -908,6 +908,10 @@
     display: flex;
   }
 
+  .slider-collection-item-close {
+    display: none;
+  }
+
   .slider-image {
     width: 560px;
     height: 560px;
@@ -2333,7 +2337,6 @@
   .subscription-button:focus-visible {
     outline: 2px solid #af4fff;
   }
-
 
   .subscription-button:hover {
     color: #ffffff;
