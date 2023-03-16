@@ -26,9 +26,7 @@
               </form>
             </div>
             <div class="header-bottom">
-              <input class="header-catalog-checkbox" type="checkbox" id="catalog-product">
-              <label class="header-navigation-button" for="catalog-product">Каталог товаров
-              </label>
+              <a class="header-catalog-heandler" href="#">каталог товаров</a>
               <div class="header-drop-catalog">
                 <ul class="header-drop-catalog-list">
                   <li class="header-drop-catalog-item">
@@ -76,7 +74,7 @@
                     <span class="basket-number-product">2</span>Корзина
                   </a>
                   <div class="basket-popover basket-popover-close">
-                  <div class="basket-pruduct basket-popover-container">
+                    <div class="basket-pruduct basket-popover-container">
                       <a class="basket-pruduct-link" href="#">
                         <img src="./images/basket/basket-product-1.jpg" width="39" height="43" alt="Любительская селфи палка.">
                         <p>Любительская селфи-палка</p>
@@ -104,7 +102,6 @@
                   </div>
                 </div>
               </div>
-
             </div>
             <div class="header-bottom">
               <nav class="header-navigation">
@@ -162,7 +159,7 @@
                 </div>
               </div>
             </div>
-            <div class="slider-collection-item visually-hidden">
+            <div class="slider-collection-item slider-collection-item-close">
               <div class="slider-product-number">02</div>
               <div class="slider-image">
                 <img src="images/slider/slider-2.png" width="560" height="560" alt="Фитнес-браслет.">
@@ -186,7 +183,7 @@
                 </div>
               </div>
             </div>
-            <div class="slider-collection-item visually-hidden">
+            <div class="slider-collection-item slider-collection-item-close">
               <div class="slider-product-number">03</div>
               <div class="slider-image">
                 <img src="images/slider/slider-3.png" width="560" height="560" alt="Селфи-палка.">
@@ -303,15 +300,15 @@
         <div class="service-container container">
           <h2 class="visually-hidden">Клиентский сервис</h2>
           <div class="service-description" id="service-description">
-            <input class="delivery visually-hidden" type="radio" name="tabs" id="service-delivery" checked>
+            <input class="delivery" type="radio" name="tabs" id="service-delivery" checked>
             <label class="service-label" for="service-delivery">
               <span>Доставка</span>
             </label>
-            <input class="warrenty visually-hidden" type="radio" name="tabs" id="service-warrenty">
+            <input class="warrenty" type="radio" name="tabs" id="service-warrenty">
             <label class="service-label" for="service-warrenty">
               <span>Гарантия</span>
             </label>
-            <input class="credit visually-hidden" type="radio" name="tabs" id="service-credit">
+            <input class="credit" type="radio" name="tabs" id="service-credit">
             <label class="service-label" for="service-credit">
               <span>Кредит</span>
             </label>
@@ -437,7 +434,6 @@
             <p class="footer-adress">
               Санкт-Петербург, набережная реки Карповки, 5, литера П.
             </p>
-            <span class="footer-line line"></span>
           </div>
           <div class="footer-center">
             <ul class="footer-info-list">
@@ -493,12 +489,12 @@
         <form action="https://echo.htmlacademy.ru/" method="get">
           <div class="fieldset-group">
             <fieldset class="fieldset-wrap">
-              <label for="name">Ваше имя</label>
+              <label class="fieldset-label-name" for="name">Ваше имя</label>
               <input class="fieldset-input-name" type="text" name="name" id="name" placeholder="Введите имя" required>
               <p class="fieldset-input-name-message">Добавьте имя</p>
             </fieldset>
             <fieldset class="fieldset-wrap">
-              <label class="fieldset-label" for="modal-email">Ваш e-mail:</label>
+              <label class="fieldset-label-mail" for="modal-email">Ваш e-mail:</label>
               <input class="fieldset-input-mail" type="email" name="email" id="modal-email" placeholder="почта" required>
               <p class="fieldset-input-mail-message">Забавный у вас адрес</p>
             </fieldset>
@@ -509,14 +505,15 @@
               <textarea name="message" cols="30" rows="10" id="message" placeholder="В свободной форме"></textarea>
             </fieldset>
             <fieldset class="fieldset-wrap">
-              <p>Количество:
+              <div class="counter-text">
+                <p>Количество:</p>
                 <button class="tooltip" type="button"></button>
-              </p>
+              </div>
               <div class="counter-wrap">
                 <button class="counter-button-minus counter-button" type="button">
                   <img src="./images/modal/modal-counter-minus.svg" alt="Минус один товар.">
                 </button>
-                <input class="counter-screen" type="number" name="counter" id="counter-result" value="0" required>
+                <input class="counter-screen" type="number" name="counter" id="counter-result" value="1" required>
                 <button class="counter-button-plus counter-button" type="button">
                   <img src="./images/modal/modal-counter-plus.svg" alt="Плюс один товар.">
                 </button>

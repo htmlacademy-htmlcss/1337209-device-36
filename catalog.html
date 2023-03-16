@@ -27,9 +27,7 @@
               </form>
             </div>
             <div class="header-bottom">
-              <input class="header-catalog-checkbox" type="checkbox" id="catalog-product">
-              <label class="header-navigation-button" for="catalog-product">Каталог товаров
-              </label>
+              <a class="header-catalog-heandler" href="#">каталог товаров</a>
               <div class="header-drop-catalog">
                 <ul class="header-drop-catalog-list">
                   <li class="header-drop-catalog-item">
@@ -368,12 +366,12 @@
         <form action="https://echo.htmlacademy.ru/" method="get">
           <div class="fieldset-group">
             <fieldset class="fieldset-wrap">
-              <label for="name">Ваше имя</label>
+              <label class="fieldset-label-name" for="name">Ваше имя</label>
               <input class="fieldset-input-name" type="text" name="name" id="name" placeholder="Введите имя" required>
               <p class="fieldset-input-name-message">Добавьте имя</p>
             </fieldset>
             <fieldset class="fieldset-wrap">
-              <label class="fieldset-label" for="e-mail">Ваш e-mail:</label>
+              <label class="fieldset-label-mail" for="e-mail">Ваш e-mail:</label>
               <input class="fieldset-input-mail" type="email" name="email" id="e-mail" placeholder="Введите e-mail" required>
               <p class="fieldset-input-mail-message">Забавный у вас адрес</p>
             </fieldset>
@@ -384,9 +382,10 @@
               <textarea name="message" cols="30" rows="10" id="message" placeholder="В свободной форме."></textarea>
             </fieldset>
             <fieldset class="fieldset-wrap ">
-              <p>Количество:
-                <button class="tooltip"></button>
-              </p>
+              <div class="counter-text">
+                <p>Количество:</p>
+                <button class="tooltip" type="button"></button>
+              </div>
               <div class="counter-wrap">
                 <button class="counter-button-minus counter-button" type="button">
                   <img src="./images/modal/modal-counter-minus.svg" alt="минус один товар.">
